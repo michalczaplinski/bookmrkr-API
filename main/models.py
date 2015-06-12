@@ -17,12 +17,14 @@ class Tag(models.Model):
 class Bookmark(models.Model):
     url = models.URLField()
     title = models.CharField('title', max_length=50)
+    cover = models.ImageField(null=True)
     description = models.TextField('description', blank=True)
     content = models.TextField('content', blank=True)
-    date_created = models.DateTimeField('date created')
+    date_created = models.DateTimeField('date created', auto_now=True)
     date_updated = models.DateTimeField('date updated')
     owner = models.ForeignKey(User, related_name='bookmarks')
     tags = models.ManyToManyField(Tag, blank=True)
+    is_trashed = models.BooleanField(default=False)
 
     # like on reddit, eg. 'github.com'
     domain = models.CharField('domain', max_length=40, blank=True)

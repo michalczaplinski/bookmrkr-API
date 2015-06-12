@@ -1,3 +1,13 @@
-from django.shortcuts import render
+from main.models import Bookmark, Tag
+from serializers import BookmarkSerializer
+from rest_framework import generics
 
-# Create your views here.
+
+class BookmarkList(generics.ListCreateAPIView):
+    queryset = Bookmark.objects.all()
+    serializer_class = BookmarkSerializer
+
+
+class BookmarkDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Bookmark.objects.all()
+    serializer_class = BookmarkSerializer
