@@ -3,5 +3,5 @@ from django.contrib import admin
 import views
 
 urlpatterns = [
-    url(r'^bookmarks/$', views.bookmark_list),
+    url(r'^bookmarks/$', views.BookmarkList.as_view()),
 ]

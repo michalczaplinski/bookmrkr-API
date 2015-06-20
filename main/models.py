@@ -21,7 +21,7 @@ class Bookmark(models.Model):
     description = models.TextField('description', blank=True)
     content = models.TextField('content', blank=True)
     date_created = models.DateTimeField('date created', auto_now=True)
-    date_updated = models.DateTimeField('date updated')
+    date_updated = models.DateTimeField('date updated', auto_now=True)
     owner = models.ForeignKey(User, related_name='bookmarks')
     tags = models.ManyToManyField(Tag, blank=True)
     is_trashed = models.BooleanField(default=False)
