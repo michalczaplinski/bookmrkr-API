@@ -1,7 +1,13 @@
 from django.conf.urls import include, url
-from django.contrib import admin
-import views
+from rest_framework.routers import DefaultRouter
+
+from api.views import BookmarkViewSet
+
+# Create a router and register our viewsets with it.
+router = DefaultRouter()
+router.register(r'bookmarks', BookmarkViewSet)
 
 urlpatterns = [
-    url(r'^bookmarks/$', views.BookmarkList.as_view()),
+    url(r'^', include(router.urls)),
+    url(r'^auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

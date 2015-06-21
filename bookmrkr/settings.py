@@ -88,6 +88,15 @@ DATABASES = {
     }
 }
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+
+    'PAGE_SIZE': 10,
+
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/

@@ -1,13 +1,17 @@
-from main.models import Bookmark, Tag
-from serializers import BookmarkSerializer
-from rest_framework import generics
+from rest_framework import viewsets
+from rest_framework.authentication import SessionAuthentication
+from rest_framework.permissions import IsAuthenticated
+
+from main.models import Bookmark
+from api.serializers import BookmarkSerializer
 
 
-class BookmarkList(generics.ListCreateAPIView):
+class BookmarkViewSet(viewsets.ModelViewSet):
+    authentication_classes = (SessionAuthentication,)
+    permission_classes = (IsAuthenticated,)
+
     queryset = Bookmark.objects.all()
     serializer_class = BookmarkSerializer
 
-
-class BookmarkDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Bookmark.objects.all()
-    serializer_class = BookmarkSerializer
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)
