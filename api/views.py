@@ -22,18 +22,5 @@ class BookmarkViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
     def perform_create(self, serializer):
-        # tags = serializer.data['tags']
-
-        # print(tags)
-
-        # if serializer.is_valid():
-        #     for tag in tags:
-        #         print(tag)
-        #         t = Tag(name=tag)
-        #         t.save()
-
-        # else:
-        #     return Response({'data': serializer.errors})
-
         serializer.save(owner=self.request.user)
 

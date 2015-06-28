@@ -17,7 +17,7 @@ class Tag(models.Model):
 class Bookmark(models.Model):
     url = models.URLField()
     title = models.CharField('title', max_length=50)
-    cover = models.ImageField(null=True)
+    cover = models.ImageField(blank= True, null=True)
     description = models.TextField('description', blank=True)
     content = models.TextField('content', blank=True)
     date_created = models.DateTimeField('date created', auto_now=True)

@@ -1,0 +1,6987 @@
+/*** uncss> filename: /Users/czapla/testing/react-test/src/semantic/dist/semantic.css ***/
+
+/*
+ * # Semantic UI - x.x
+ * https://github.com/Semantic-Org/Semantic-UI
+ * http://www.semantic-ui.com/
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin';
+
+/*!
+ * # Semantic UI x.x - Reset
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Reset
+*******************************/
+
+/* Border-Box */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* iPad Input Shadows */
+
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* mobile firefox too! */
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+input {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Site
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Page
+*******************************/
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-width: 320px;
+  background: #f7f7f7;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.33;
+  color: rgba(0, 0, 0, 0.8);
+  font-smoothing: antialiased;
+}
+
+/*******************************
+             Headers
+*******************************/
+
+/*******************************
+             Text
+*******************************/
+
+p {
+  margin: 0em 0em 1em;
+  line-height: 1.33;
+}
+
+p:first-child {
+  margin-top: 0em;
+}
+
+p:last-child {
+  margin-bottom: 0em;
+}
+
+/*-------------------
+        Links
+--------------------*/
+
+a {
+  color: #009fda;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00b2f3;
+}
+
+/*******************************
+          Highlighting
+*******************************/
+
+/* Site */
+
+::-webkit-selection {
+  background-color: #cce2ff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+::-moz-selection {
+  background-color: #cce2ff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+::selection {
+  background-color: #cce2ff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Form */
+
+textarea::-webkit-selection,
+input::-webkit-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+textarea::-moz-selection,
+input::-moz-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+input::selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*******************************
+        Global Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Button
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Button
+*******************************/
+
+.ui.button {
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: none;
+  border: none;
+  vertical-align: baseline;
+  background-color: #e0e0e0;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 0em 0.25em 0em 0em;
+  padding: 0.78571em 1.5em 0.78571em;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: bold;
+  line-height: 1;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  background-image: none;
+  border-radius: 0.2857rem;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  will-change: '';
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+      Hover
+---------------*/
+
+.ui.button:hover {
+  background-color: #e8e8e8;
+  background-image: none;
+  box-shadow: '';
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ui.button:hover .icon {
+  opacity: 0.85;
+}
+
+/*--------------
+      Focus
+---------------*/
+
+.ui.button:focus {
+  background-color: '';
+  color: rgba(0, 0, 0, 0.8);
+  background-image: '' !important;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0px 1px rgba(81, 167, 232, 0.8) inset, 0px 0px 3px 2px rgba(81, 167, 232, 0.8) !important;
+}
+
+.ui.button:focus .icon {
+  opacity: 0.85;
+}
+
+/*--------------
+      Down
+---------------*/
+
+.ui.button:active {
+  background-color: #cccccc;
+  background-image: '';
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 1px 4px 0px rgba(39, 41, 43, 0.15) inset !important;
+}
+
+/*--------------
+     Active
+---------------*/
+
+/*--------------
+    Loading
+---------------*/
+
+/* Specificity hack */
+
+/*-------------------
+      Disabled
+--------------------*/
+
+.ui.button:disabled {
+  cursor: default;
+  background-color: #dcddde !important;
+  color: rgba(0, 0, 0, 0.4) !important;
+  opacity: 0.3 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  pointer-events: none;
+}
+
+/* Basic Group With Disabled */
+
+/*******************************
+             Types
+*******************************/
+
+/*-------------------
+       Animated
+--------------------*/
+
+/* Horizontal */
+
+/* Vertical */
+
+/* Fade */
+
+/*-------------------
+       Inverted
+--------------------*/
+
+/*-------------------
+       Social
+--------------------*/
+
+/* Facebook */
+
+/* Twitter */
+
+/* Google Plus */
+
+/* Linked In */
+
+/* YouTube */
+
+/* Instagram */
+
+/* Pinterest */
+
+/* VK */
+
+/*--------------
+     Icon
+---------------*/
+
+.ui.button > .icon {
+  opacity: 0.8;
+  margin: 0em 0.4em 0em -0.2em;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  vertical-align: baseline;
+  color: '';
+}
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+       Floated
+--------------------*/
+
+.ui[class*="right floated"].buttons {
+  float: right;
+  margin-right: 0em;
+  margin-left: 0.25em;
+}
+
+/*-------------------
+       Compact
+--------------------*/
+
+.ui.compact.buttons .button {
+  padding: 0.5892825em 1.125em 0.5892825em;
+}
+
+.ui.compact.icon.buttons .button {
+  padding: 0.5892825em 0.5892825em 0.5892825em;
+}
+
+/*-------------------
+        Sizes
+--------------------*/
+
+.ui.small.buttons .button {
+  font-size: 0.92857143rem;
+}
+
+.ui.buttons .button,
+.ui.button {
+  font-size: 1rem;
+}
+
+/*--------------
+    Icon Only
+---------------*/
+
+.ui.icon.buttons .button,
+.ui.icon.button {
+  padding: 0.78571em 0.78571em 0.78571em;
+}
+
+.ui.icon.buttons .button > .icon,
+.ui.icon.button > .icon {
+  opacity: 0.9;
+  margin: 0em;
+  vertical-align: top;
+}
+
+/*-------------------
+        Basic
+--------------------*/
+
+.ui.basic.buttons .button {
+  background: transparent !important;
+  background-image: none;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-weight: normal;
+  border-radius: 0.2857rem;
+  text-transform: none;
+  text-shadow: none !important;
+  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.basic.buttons {
+  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15);
+  border-radius: 0.2857rem;
+}
+
+.ui.basic.buttons .button {
+  border-radius: 0em;
+}
+
+.ui.basic.buttons .button:hover {
+  background: #fafafa !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset, 0px 0px 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.basic.buttons .button:active {
+  background: #f8f8f8 !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+/* Vertical */
+
+.ui.basic.buttons .button:hover {
+  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15) inset, 0px 0px 0px 0px rgba(39, 41, 43, 0.15) inset inset;
+}
+
+.ui.basic.buttons .button:active {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(39, 41, 43, 0.15) inset inset;
+}
+
+/* Standard Basic Inverted */
+
+/* Basic Group */
+
+.ui.basic.buttons .button {
+  border-left: 1px solid rgba(39, 41, 43, 0.15);
+  box-shadow: none;
+}
+
+/*--------------
+  Labeled Icon
+---------------*/
+
+/* Left Labeled */
+
+/* Left Labeled */
+
+/* Right Labeled */
+
+/* Fluid Labeled */
+
+/*--------------
+     Toggle
+---------------*/
+
+/* Toggle (Modifies active state to give affordances) */
+
+/*--------------
+    Circular
+---------------*/
+
+.ui.circular.button {
+  border-radius: 10em;
+}
+
+.ui.circular.button > .icon {
+  width: 1em;
+  vertical-align: baseline;
+}
+
+/*--------------
+     Attached
+---------------*/
+
+/*-------------------
+      Or Buttons
+--------------------*/
+
+/* Fluid Or */
+
+/*-------------------
+       Attached
+--------------------*/
+
+/* Plural Attached */
+
+/* Top Side */
+
+/* Bottom Side */
+
+/* Left Side */
+
+/* Right Side */
+
+/* Fluid */
+
+/* Fluid Vertical Buttons */
+
+/*-------------------
+       Colors
+--------------------*/
+
+/*--- Black ---*/
+
+/* Basic */
+
+/* Inverted */
+
+/* Inverted Basic */
+
+/*--- Blue ---*/
+
+/* Basic */
+
+/* Inverted */
+
+/* Inverted Basic */
+
+/*--- Green ---*/
+
+/* Basic */
+
+/* Inverted */
+
+/* Inverted Basic */
+
+/*--- Orange ---*/
+
+/* Basic */
+
+/* Inverted */
+
+/* Inverted Basic */
+
+/*--- Pink ---*/
+
+/* Basic */
+
+/* Inverted */
+
+/* Inverted Basic */
+
+/*--- Purple ---*/
+
+/* Basic */
+
+/* Inverted */
+
+/* Inverted Basic */
+
+/*--- Red ---*/
+
+.ui.red.button {
+  background-color: #d95c5c;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none;
+}
+
+.ui.red.button {
+  box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.red.button:hover {
+  background-color: #dc6868;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ui.red.button:active {
+  background-color: #d23f3f;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+/* Basic */
+
+/* Inverted */
+
+/* Inverted Basic */
+
+/*--- Teal ---*/
+
+/* Basic */
+
+/* Inverted */
+
+/* Inverted Basic */
+
+/*--- Yellow ---*/
+
+/* Basic */
+
+/* Inverted */
+
+/* Inverted Basic */
+
+/*-------------------
+       Primary
+--------------------*/
+
+/*-------------------
+      Secondary
+--------------------*/
+
+/*---------------
+    Positive
+----------------*/
+
+.ui.positive.button {
+  background-color: #5bbd72 !important;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none;
+}
+
+.ui.positive.button {
+  box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.positive.button:hover {
+  background-color: #66c17b !important;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ui.positive.button:active {
+  background-color: #46ae5f !important;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+/*---------------
+     Negative
+----------------*/
+
+.ui.negative.button {
+  background-color: #d95c5c !important;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none;
+}
+
+.ui.negative.button {
+  box-shadow: 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.negative.button:hover {
+  background-color: #dc6868 !important;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.ui.negative.button:active {
+  background-color: #d23f3f !important;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+/*******************************
+            Groups
+*******************************/
+
+.ui.buttons {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0em 0.25em 0em 0em;
+}
+
+.ui.buttons > .button:hover {
+  position: relative;
+}
+
+.ui.buttons:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.ui.buttons .button:first-child {
+  border-left: none;
+}
+
+.ui.buttons:not(.basic):not(.inverted) {
+  box-shadow: none;
+}
+
+.ui.buttons > .ui.button:not(.basic):not(.inverted),
+.ui.buttons:not(.basic):not(.inverted) > .button {
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
+}
+
+.ui.buttons .button {
+  margin: 0em;
+  float: left;
+  border-radius: 0em;
+  margin: 0px 0px 0px 0px;
+}
+
+.ui.buttons .button:first-child {
+  margin-left: 0em;
+  border-top-left-radius: 0.2857rem;
+  border-bottom-left-radius: 0.2857rem;
+}
+
+.ui.buttons .button:last-child {
+  border-top-right-radius: 0.2857rem;
+  border-bottom-right-radius: 0.2857rem;
+}
+
+/* Vertical  Style */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Divider
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Divider
+*******************************/
+
+.ui.divider {
+  margin: 1rem 0rem;
+  line-height: 1;
+  height: 0em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.85);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*--------------
+      Basic
+---------------*/
+
+/*--------------
+    Coupling
+---------------*/
+
+/*--------------
+   Horizontal
+---------------*/
+
+.ui.horizontal.divider {
+  position: relative;
+  height: auto;
+  margin: '';
+  overflow: hidden;
+  line-height: 1;
+  text-align: center;
+}
+
+.ui.horizontal.divider:before,
+.ui.horizontal.divider:after {
+  position: absolute;
+  content: '';
+  z-index: 3;
+  width: 50%;
+  top: 50%;
+  height: 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ui.horizontal.divider:before {
+  margin-left: -webkit-calc(-50% -  1em );
+  margin-left: calc(-50% -  1em );
+}
+
+.ui.horizontal.divider:after {
+  margin-left: 1em;
+}
+
+/*--------------
+    Vertical
+---------------*/
+
+/* Inside grid */
+
+/*--------------
+      Icon
+---------------*/
+
+/*******************************
+          Variations
+*******************************/
+
+/*--------------
+    Hidden
+---------------*/
+
+/*--------------
+    Inverted
+---------------*/
+
+/*--------------
+    Fitted
+---------------*/
+
+/*--------------
+    Clearing
+---------------*/
+
+/*--------------
+    Section
+---------------*/
+
+/*--------------
+     Sizes
+---------------*/
+
+.ui.divider {
+  font-size: 1rem;
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Flag
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Flag
+*******************************/
+
+/* Sprite */
+
+/* Flag Sprite Based On http://www.famfamfam.com/lab/icons/flags/ */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Header
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Header
+*******************************/
+
+/* Standard */
+
+/*--------------
+   Sub Header
+---------------*/
+
+/*--------------
+      Icon
+---------------*/
+
+/* With Text Node */
+
+/*-------------------
+        Image
+--------------------*/
+
+/*--------------
+     Content
+---------------*/
+
+/* After Image */
+
+/* After Icon */
+
+/*--------------
+ Loose Coupling
+---------------*/
+
+/* Positioning */
+
+/*******************************
+            Types
+*******************************/
+
+/*--------------
+     Page
+---------------*/
+
+/* Sub Header */
+
+/*--------------
+ Content Heading
+---------------*/
+
+/* Sub Header */
+
+/*-------------------
+        Icon
+--------------------*/
+
+/*******************************
+            States
+*******************************/
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+       Colors
+--------------------*/
+
+/*-------------------
+      Inverted
+--------------------*/
+
+/*-------------------
+   Inverted Colors
+--------------------*/
+
+/*-------------------
+       Aligned
+--------------------*/
+
+/*-------------------
+       Floated
+--------------------*/
+
+/*-------------------
+       Fittted
+--------------------*/
+
+/*-------------------
+      Dividing
+--------------------*/
+
+/*-------------------
+        Block
+--------------------*/
+
+/*-------------------
+       Attached
+--------------------*/
+
+/* Attached Sizes */
+
+/*-------------------
+        Sizing
+--------------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Icon
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Icon
+*******************************/
+
+@font-face {
+  font-family: 'Icons';
+  src: url("themes/default/assets/fonts/icons.eot");
+  src: url("themes/default/assets/fonts/icons.eot?#iefix") format('embedded-opentype'), url("themes/default/assets/fonts/icons.woff2") format('woff'), url("themes/default/assets/fonts/icons.woff") format('woff'), url("themes/default/assets/fonts/icons.ttf") format('truetype'), url("themes/default/assets/fonts/icons.svg#icons") format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+i.icon {
+  display: inline-block;
+  opacity: 1;
+  margin: 0em 0.25rem 0em 0em;
+  width: 1.23em;
+  height: 0.9em;
+  font-family: 'Icons';
+  font-style: normal;
+  line-height: 1;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-align: center;
+  speak: none;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+i.icon:before {
+  background: none !important;
+}
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+    Loading
+---------------*/
+
+/*******************************
+             States
+*******************************/
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+         Link
+--------------------*/
+
+/*-------------------
+      Circular
+--------------------*/
+
+/*-------------------
+      Flipped
+--------------------*/
+
+/*-------------------
+      Rotated
+--------------------*/
+
+/*-------------------
+      Bordered
+--------------------*/
+
+/*-------------------
+       Colors
+--------------------*/
+
+/*-------------------
+      Inverted
+--------------------*/
+
+/* Inverted Shapes */
+
+/*-------------------
+        Sizes
+--------------------*/
+
+i.icon {
+  font-size: 1em;
+}
+
+i.large.icon {
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+i.big.icon {
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+/*
+ * Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ * License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+/*******************************
+
+Semantic-UI integration of font-awesome :
+
+///class names are separated
+i.icon.circle => i.icon.circle
+i.icon.circle-o => i.icon.circle.outline
+
+//abbreviation are replaced by full letters:
+i.icon.ellipsis-h => i.icon.ellipsis.horizontal
+i.icon.ellipsis-v => i.icon.ellipsis.vertical
+.alpha => .i.icon.alphabet
+.asc => .i.icon.ascending
+.desc => .i.icon.descending
+.alt =>.alternate
+
+ASCII order is conserved for easier maintenance.
+
+Icons that only have one style 'outline', 'square' etc do not require this class
+for instance `lemon icon` not `lemon outline icon` since there is only one lemon
+
+*******************************/
+
+/*******************************
+            Icons
+*******************************/
+
+/* Web Content */
+
+i.icon.tags:before {
+  content: "\f02c";
+}
+
+i.icon.cloud:before {
+  content: "\f0c2";
+}
+
+i.icon.options:before {
+  content: "\f1de";
+}
+
+/* User Actions */
+
+i.icon.download:before {
+  content: "\f019";
+}
+
+i.icon.bookmark:before {
+  content: "\f02e";
+}
+
+i.icon.edit:before {
+  content: "\f044";
+}
+
+i.icon.share:before {
+  content: "\f064";
+}
+
+i.icon.upload:before {
+  content: "\f093";
+}
+
+i.icon.cloud.download:before {
+  content: "\f0ed";
+}
+
+i.icon.cloud.upload:before {
+  content: "\f0ee";
+}
+
+/* Messages */
+
+/* Users */
+
+i.icon.user:before {
+  content: "\f007";
+}
+
+/* Gender & Sexuality */
+
+/* View Adjustment */
+
+/* Literal Objects */
+
+/* Shapes */
+
+i.icon.cubes:before {
+  content: "\f1b3";
+}
+
+/* Item Selection */
+
+i.icon.remove:before {
+  content: "\f00d";
+}
+
+i.icon.plus:before {
+  content: "\f067";
+}
+
+/* Media */
+
+/* Pointers */
+
+/* Computer */
+
+i.icon.trash:before {
+  content: "\f1f8";
+}
+
+/* File System */
+
+/* Technologies */
+
+/* Rating */
+
+/* Audio */
+
+/* Map, Locations, & Transportation */
+
+/* Tables */
+
+/* Text Editor */
+
+/* Currency */
+
+/* Payment Options */
+
+/* Networks and Websites*/
+
+/*******************************
+            Aliases
+*******************************/
+
+i.icon.remove:before {
+  content: "\f00d";
+}
+
+i.icon.close:before {
+  content: "\f00d";
+}
+
+i.icon.delete:before {
+  content: "\f00d";
+}
+
+i.icon.log.out:before {
+  content: "\f08b";
+}
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Image
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Image
+*******************************/
+
+.ui.image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  background-color: transparent;
+}
+
+.ui.image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*******************************
+            States
+*******************************/
+
+/*******************************
+          Variations
+*******************************/
+
+/*--------------
+     Inline
+---------------*/
+
+/*------------------
+  Vertical Aligned
+-------------------*/
+
+/*--------------
+     Rounded
+---------------*/
+
+/*--------------
+    Bordered
+---------------*/
+
+/*--------------
+    Circular
+---------------*/
+
+/*--------------
+     Fluid
+---------------*/
+
+/*--------------
+     Avatar
+---------------*/
+
+/*-------------------
+       Floated
+--------------------*/
+
+.ui.floated.image {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+/*--------------
+     Sizes
+---------------*/
+
+/*******************************
+              Groups
+*******************************/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Input
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+           Standard
+*******************************/
+
+/*--------------------
+        Inputs
+---------------------*/
+
+.ui.input {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ui.input input {
+  margin: 0em;
+  max-width: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 1.2142em;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  padding: 0.67861em 1em;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 0.2857rem;
+  -webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: none;
+}
+
+/*--------------------
+      Placeholder
+---------------------*/
+
+/* browsers require these rules separate */
+
+.ui.input input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.ui.input input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*******************************
+            States
+*******************************/
+
+/*--------------------
+        Active
+---------------------*/
+
+.ui.input input:active {
+  border-color: rgba(0, 0, 0, 0.3);
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: none;
+}
+
+/*--------------------
+       Loading
+---------------------*/
+
+/*--------------------
+        Focus
+---------------------*/
+
+.ui.input input:focus {
+  border-color: rgba(39, 41, 43, 0.3);
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: none;
+}
+
+.ui.input.focus input::-moz-placeholder,
+.ui.input input:focus input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ui.input.focus input::-ms-input-placeholder,
+.ui.input input:focus input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*--------------------
+        Error
+---------------------*/
+
+/* Error Placeholder */
+
+.ui.input.error input ::-moz-placeholder {
+  color: rgba(255, 80, 80, 0.4);
+}
+
+.ui.input.error input ::-ms-input-placeholder {
+  color: rgba(255, 80, 80, 0.4);
+}
+
+/* Focused Error Placeholder */
+
+.ui.input.error input :focus::-moz-placeholder {
+  color: rgba(255, 80, 80, 0.7);
+}
+
+.ui.input.error input :focus::-ms-input-placeholder {
+  color: rgba(255, 80, 80, 0.7);
+}
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------------
+      Transparent
+---------------------*/
+
+/* Transparent Icon */
+
+/* Transparent Inverted */
+
+.ui.transparent.inverted.input input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ui.transparent.inverted.input input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*--------------------
+         Icon
+---------------------*/
+
+/* Left Icon Input */
+
+/* Focus */
+
+/*--------------------
+        Labeled
+---------------------*/
+
+/* Adjacent Label */
+
+/* Label on Left */
+
+/* Label on Right */
+
+/* Corner Label */
+
+/* Spacing with corner label */
+
+/*--------------------
+        Action
+---------------------*/
+
+/* Button on Right */
+
+/* Button on Left */
+
+/*--------------------
+       Inverted
+---------------------*/
+
+/* Standard */
+
+/*--------------------
+        Fluid
+---------------------*/
+
+.ui.fluid.input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ui.fluid.input > input {
+  width: 100% !important;
+}
+
+/*--------------------
+        Size
+---------------------*/
+
+.ui.input {
+  font-size: 1em;
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Label
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Label
+*******************************/
+
+.ui.label {
+  display: inline-block;
+  vertical-align: baseline;
+  line-height: 1;
+  margin: 0em 0.125em;
+  background-color: #e8e8e8;
+  border-color: #e8e8e8;
+  background-image: none;
+  padding: 0.6em 0.8em;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: none;
+  font-weight: bold;
+  border-radius: 0.2857rem;
+  box-sizing: border-box;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+.ui.label:last-child {
+  margin-right: 0em;
+}
+
+/* Link */
+
+/* Inside Link */
+
+/* Icon */
+
+.ui.label .icon {
+  width: auto;
+  margin: 0em 0.75em 0em 0em;
+}
+
+/* Detail */
+
+/* Removable label */
+
+.ui.label .delete.icon {
+  cursor: pointer;
+  margin-right: 0em;
+  margin-left: 0.5em;
+  opacity: 0.8;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+.ui.label .delete.icon:hover {
+  opacity: 1;
+}
+
+/*-------------------
+       Group
+--------------------*/
+
+/*-------------------
+       Coupling
+--------------------*/
+
+/* Remove border radius on attached segment */
+
+/* Padding on next content after a label */
+
+/*******************************
+             Types
+*******************************/
+
+/*-------------------
+         Tag
+--------------------*/
+
+/*-------------------
+    Corner Label
+--------------------*/
+
+/* Icon Label */
+
+/* Left Corner */
+
+/* Segment */
+
+/* Input */
+
+/*-------------------
+       Ribbon
+--------------------*/
+
+/* Right Ribbon */
+
+/* Positioning */
+
+/* Inside Image */
+
+/*-------------------
+      Attached
+--------------------*/
+
+/*******************************
+             States
+*******************************/
+
+/*-------------------
+      Disabled
+--------------------*/
+
+/*-------------------
+        Hover
+--------------------*/
+
+/*-------------------
+      Visible
+--------------------*/
+
+/*-------------------
+      Hidden
+--------------------*/
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+       Colors
+--------------------*/
+
+/*--- Black ---*/
+
+/*--- Blue ---*/
+
+/*--- Green ---*/
+
+/*--- Orange ---*/
+
+/*--- Pink ---*/
+
+/*--- Purple ---*/
+
+/*--- Red ---*/
+
+/*--- Teal ---*/
+
+/*--- Yellow ---*/
+
+/*-------------------
+       Fluid
+--------------------*/
+
+/*-------------------
+       Inverted
+--------------------*/
+
+/*-------------------
+     Horizontal
+--------------------*/
+
+/*-------------------
+       Circular
+--------------------*/
+
+/*-------------------
+       Pointing
+--------------------*/
+
+/*--- Above ---*/
+
+/*--- Below ---*/
+
+/*--- Left ---*/
+
+/*--- Right ---*/
+
+/*------------------
+   Floating Label
+-------------------*/
+
+/*-------------------
+        Sizes
+--------------------*/
+
+.ui.tiny.label {
+  font-size: 0.7142rem;
+}
+
+.ui.label {
+  font-size: 0.8571rem;
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - List
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            List
+*******************************/
+
+/*******************************
+            Content
+*******************************/
+
+/* List Item */
+
+/* Child List */
+
+/* Icon */
+
+/* Image */
+
+/* Content */
+
+/* Item Link */
+
+/* Linked Item Icons */
+
+/* Linking Content */
+
+/* Header */
+
+/* Floated Content */
+
+/*******************************
+            Coupling
+*******************************/
+
+/*******************************
+            Types
+*******************************/
+
+/*-------------------
+      Horizontal
+--------------------*/
+
+/* Padding on all elements */
+
+/* Horizontal List */
+
+/*******************************
+             States
+*******************************/
+
+/*-------------------
+       Disabled
+--------------------*/
+
+/*-------------------
+        Hover
+--------------------*/
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+       Inverted
+--------------------*/
+
+/* Item Link */
+
+/* Linking Content */
+
+/*-------------------
+       Link
+--------------------*/
+
+/* Inverted */
+
+/*-------------------
+      Selection
+--------------------*/
+
+/* Inverted */
+
+/* Celled / Divided Selection List */
+
+/*-------------------
+       Animated
+--------------------*/
+
+/*-------------------
+       Fitted
+--------------------*/
+
+/*-------------------
+      Bulleted
+--------------------*/
+
+/* Horizontal Bulleted */
+
+/*-------------------
+       Ordered
+--------------------*/
+
+/* Child Lists */
+
+/* Horizontal Ordered */
+
+/*-------------------
+       Divided
+--------------------*/
+
+/* Sub Menu */
+
+/* Divided bulleted */
+
+/* Divided Ordered */
+
+/* Divided Selection */
+
+/* Divided horizontal */
+
+/* Inverted */
+
+/*-------------------
+        Celled
+--------------------*/
+
+/* Padding on all elements */
+
+/* Sub Menu */
+
+/* Celled Bulleted */
+
+/* Celled Ordered */
+
+/* Celled Horizontal */
+
+/* Inverted */
+
+/*-------------------
+       Relaxed
+--------------------*/
+
+/* Very Relaxed */
+
+/*-------------------
+      Sizes
+--------------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Loader
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Loader
+*******************************/
+
+/* Standard Size */
+
+/* Static Shape */
+
+/* Active Shape */
+
+/* Active Animation */
+
+/* Sizes */
+
+/*-------------------
+      Coupling
+--------------------*/
+
+/* Show inside active dimmer */
+
+/* Black Dimmer */
+
+/* White Dimmer (Inverted) */
+
+/*******************************
+             Types
+*******************************/
+
+/*-------------------
+        Text
+--------------------*/
+
+/*******************************
+            States
+*******************************/
+
+/*******************************
+            Variations
+*******************************/
+
+/*-------------------
+        Sizes
+--------------------*/
+
+/* Loader */
+
+/* Text Loader */
+
+/*-------------------
+       Inverted
+--------------------*/
+
+/*-------------------
+       Inline
+--------------------*/
+
+/* Centered Inline */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Rail
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Rails
+*******************************/
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+     Internal
+---------------*/
+
+/*--------------
+     Divided
+---------------*/
+
+/*--------------
+    Distance
+---------------*/
+
+/*--------------
+    Attached
+---------------*/
+
+/*--------------
+     Sizing
+---------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Reveal
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Reveal
+*******************************/
+
+/* Make sure hovered element is on top of other reveal */
+
+/*******************************
+              Types
+*******************************/
+
+/*--------------
+      Slide
+---------------*/
+
+/*--------------
+      Fade
+---------------*/
+
+/*--------------
+      Move
+---------------*/
+
+/*--------------
+     Rotate
+---------------*/
+
+/*******************************
+              States
+*******************************/
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+     Masked
+---------------*/
+
+/*--------------
+     Instant
+---------------*/
+
+/*--------------
+     Sizing
+---------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Segment
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Segment
+*******************************/
+
+.ui.segment {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  margin: 1rem 0em;
+  padding: 1em 1em;
+  border-radius: 0.2857rem;
+  border: none;
+}
+
+.ui.segment:first-child {
+  margin-top: 0em;
+}
+
+.ui.segment:last-child {
+  margin-bottom: 0em;
+}
+
+.ui.segment:after {
+  content: '';
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Vertical */
+
+/* Horizontal */
+
+/*-------------------
+    Loose Coupling
+--------------------*/
+
+/* Header */
+
+/* Label */
+
+/* Grid */
+
+/* Table */
+
+/*******************************
+             Types
+*******************************/
+
+/*-------------------
+        Piled
+--------------------*/
+
+/* Piled Attached */
+
+/*-------------------
+       Stacked
+--------------------*/
+
+/* Add additional page */
+
+/* Inverted */
+
+/*-------------------
+       Compact
+--------------------*/
+
+/*-------------------
+       Circular
+--------------------*/
+
+/*-------------------
+       Raised
+--------------------*/
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+    Disabled
+---------------*/
+
+/*--------------
+    Loading
+---------------*/
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+       Basic
+--------------------*/
+
+/*-------------------
+       Fittted
+--------------------*/
+
+/*-------------------
+       Colors
+--------------------*/
+
+/*-------------------
+   Inverted Colors
+--------------------*/
+
+/*-------------------
+       Aligned
+--------------------*/
+
+/*-------------------
+       Floated
+--------------------*/
+
+/*-------------------
+      Inverted
+--------------------*/
+
+/*-------------------
+     Ordinality
+--------------------*/
+
+/*-------------------
+      Attached
+--------------------*/
+
+/* Top */
+
+/* Bottom */
+
+/*-------------------
+       Groups
+--------------------*/
+
+/* Top */
+
+/* Bottom */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Step
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+           Singular
+*******************************/
+
+/*******************************
+            Plural
+*******************************/
+
+/*******************************
+            Content
+*******************************/
+
+/* Title */
+
+/* Description */
+
+/* Icon */
+
+/* Link */
+
+/*******************************
+            Types
+*******************************/
+
+/*--------------
+     Ordered
+---------------*/
+
+/*--------------
+    Vertical
+---------------*/
+
+/* Arrow */
+
+/* Active Arrow */
+
+/*---------------
+    Responsive
+----------------*/
+
+/* Mobile (Default) */
+
+@media only screen and (max-width: 767px) {
+  /* Arrow */
+}
+
+/*******************************
+             States
+*******************************/
+
+/* Link Hover */
+
+/* Link Down */
+
+/* Active */
+
+/* Active Hover */
+
+/* Completed */
+
+/* Disabled */
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+   Stackable
+---------------*/
+
+/* Tablet Or Below */
+
+@media only screen and (min-width: 992px) {
+  /* Arrow */
+}
+
+/*--------------
+      Fluid
+---------------*/
+
+/* Fluid */
+
+/*--------------
+    Attached
+---------------*/
+
+/* Top */
+
+/* Bottom */
+
+/*-------------------
+    Evenly Divided
+--------------------*/
+
+/*-------------------
+       Sizes
+--------------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+@font-face {
+  font-family: 'Step';
+  src: url("data:application/x-font-ttf;charset=utf-8;;base64,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") format('truetype'), url("data:application/font-woff;charset=utf-8;base64,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") format('woff');
+}
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Breadcrumb
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+           Breadcrumb
+*******************************/
+
+/*******************************
+          Content
+*******************************/
+
+/* Divider */
+
+/* Link */
+
+/* Icon Divider */
+
+/* Section */
+
+/* Loose Coupling */
+
+/*******************************
+            States
+*******************************/
+
+/*******************************
+           Variations
+*******************************/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Form
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Elements
+*******************************/
+
+/*--------------------
+        Form
+---------------------*/
+
+/*--------------------
+        Content
+---------------------*/
+
+/*--------------------
+        Field
+---------------------*/
+
+/*--------------------
+        Labels
+---------------------*/
+
+/*--------------------
+    Standard Inputs
+---------------------*/
+
+/*--------------------------
+  Input w/ attached Button
+---------------------------*/
+
+/*--------------------
+     Basic Select
+---------------------*/
+
+/*--------------------
+       Dropdown
+---------------------*/
+
+/*--------------------
+       Dividers
+---------------------*/
+
+/*--------------------
+   Types of Messages
+---------------------*/
+
+/* Assumptions */
+
+/*--------------------
+   Validation Prompt
+---------------------*/
+
+/*******************************
+            States
+*******************************/
+
+/*--------------------
+      Placeholder
+---------------------*/
+
+/* browsers require these rules separate */
+
+.ui.form ::-moz-placeholder {
+  color: rgba(140, 140, 140, 0.8);
+}
+
+.ui.form :focus::-moz-placeholder {
+  color: rgba(89, 89, 89, 0.8);
+}
+
+/* Error Placeholder */
+
+.ui.form .error ::-moz-placeholder {
+  color: #e38585;
+}
+
+.ui.form .error :focus::-moz-placeholder {
+  color: #de7171;
+}
+
+/*--------------------
+        Focus
+---------------------*/
+
+/*--------------------
+        Success
+---------------------*/
+
+/* On Form */
+
+/*--------------------
+        Error
+---------------------*/
+
+/* On Form */
+
+/*--------------------
+        Warning
+---------------------*/
+
+/* On Form */
+
+/* On Field(s) */
+
+/* Preserve Native Select Stylings */
+
+/*------------------
+    Dropdown Error
+--------------------*/
+
+/* Hover */
+
+/* Active */
+
+/*--------------------
+    Checkbox Error
+---------------------*/
+
+/*--------------------
+       Disabled
+---------------------*/
+
+/*--------------
+    Loading
+---------------*/
+
+/*******************************
+         Element Types
+*******************************/
+
+/*--------------------
+     Required Field
+---------------------*/
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------------
+    Inverted Colors
+---------------------*/
+
+/*--------------------
+     Field Groups
+---------------------*/
+
+/* Grouped Vertically */
+
+/*--------------------
+        Fields
+---------------------*/
+
+/* Split fields */
+
+/* Other Combinations */
+
+/* Swap to full width on mobile */
+
+/* Sizing Combinations */
+
+/* Swap to full width on mobile */
+
+/*--------------------
+    Inline Fields
+---------------------*/
+
+/* Label */
+
+/*--------------------
+        Sizes
+---------------------*/
+
+/* Standard */
+
+/* Medium */
+
+/* Large */
+
+/* Huge */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Grid
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Standard
+*******************************/
+
+.ui.grid {
+  display: block;
+  text-align: left;
+  font-size: 0em;
+  padding: 0em;
+}
+
+.ui.grid:after {
+  content: '';
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+/*----------------------
+      Remove Gutters
+-----------------------*/
+
+.ui.grid {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+/* Collapse Margins on Consecutive Grids */
+
+.ui.grid + .grid {
+  margin-top: 1rem;
+}
+
+/*-------------------
+       Columns
+--------------------*/
+
+/* Standard 16 column */
+
+.ui.grid > .column:not(.row) {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  width: 6.25%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  vertical-align: top;
+}
+
+.ui.grid > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*-------------------
+        Rows
+--------------------*/
+
+/*-------------------
+       Columns
+--------------------*/
+
+/* Vertical padding when no rows */
+
+.ui.grid > .column:not(.row) {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*-------------------
+      Content
+--------------------*/
+
+/*-------------------
+    Loose Coupling
+--------------------*/
+
+/* remove Border on last horizontal segment */
+
+/*******************************
+           Variations
+*******************************/
+
+/*-----------------------
+       Page Grid
+-------------------------*/
+
+.ui.page.grid {
+  padding-left: 8%;
+  padding-right: 8%;
+  width: auto;
+}
+
+/* Collapse Margin */
+
+@media only screen and (max-width: 767px) {
+  .ui.page.grid {
+    width: auto;
+    padding-left: 0em;
+    padding-right: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.page.grid {
+    width: auto;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .ui.page.grid {
+    width: auto;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .ui.page.grid {
+    width: auto;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .ui.page.grid {
+    width: auto;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding-left: 23%;
+    padding-right: 23%;
+  }
+}
+
+/*-------------------
+     Column Count
+--------------------*/
+
+/* Assume full width with one column */
+
+.ui.grid > .column:only-child {
+  width: 100%;
+}
+
+/* Grid Based */
+
+/* Row Based Overrides */
+
+/*-------------------
+    Column Width
+--------------------*/
+
+/* Sizing Combinations */
+
+.ui.grid > [class*="three wide"].column {
+  width: 18.75% !important;
+}
+
+.ui.grid > [class*="ten wide"].column {
+  width: 62.5% !important;
+}
+
+.ui.grid > [class*="twelve wide"].column {
+  width: 75% !important;
+}
+
+/*----------------------
+    Width per Device
+-----------------------*/
+
+/* Mobile Sizing Combinations */
+
+/* Tablet Sizing Combinations */
+
+/* Computer/Desktop Sizing Combinations */
+
+/* Large Monitor Sizing Combinations */
+
+/* Widescreen Sizing Combinations */
+
+/*----------------------
+        Centered
+-----------------------*/
+
+.ui.grid > .centered.column {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------------------
+        Relaxed
+-----------------------*/
+
+/* Coupling with UI Divider */
+
+/*----------------------
+        Padded
+-----------------------*/
+
+/*----------------------
+       "Floated"
+-----------------------*/
+
+/*----------------------
+        Divided
+-----------------------*/
+
+/* Swap from padding to margin on columns to have dividers align */
+
+/* No divider on first column on row */
+
+/* Divided Row */
+
+/* Vertically Divided */
+
+/* Padded Horizontally Divided */
+
+/* First Row Vertically Divided */
+
+/* Inverted Divided */
+
+/* Relaxed */
+
+/*----------------------
+         Celled
+-----------------------*/
+
+/* Internally Celled */
+
+/*----------------------
+  Horizontally Centered
+-----------------------*/
+
+/* Left Aligned */
+
+.ui.grid [class*="left aligned"].column {
+  text-align: left;
+  -webkit-box-align: start !important;
+  -webkit-align-items: flex-start !important;
+  -ms-flex-align: start !important;
+  align-items: flex-start !important;
+}
+
+.ui.grid [class*="left aligned"].column {
+  text-align: left !important;
+}
+
+/* Center Aligned */
+
+/* Right Aligned */
+
+.ui.grid [class*="right aligned"].column {
+  text-align: right !important;
+}
+
+/* Justified */
+
+/*----------------------
+   Vertically Aligned
+-----------------------*/
+
+/* Top Aligned */
+
+/* Middle Aligned */
+
+/* Bottom Aligned */
+
+/*----------------------
+         Colored
+-----------------------*/
+
+/*----------------------
+      Equal Width
+-----------------------*/
+
+/* Flexbox (Experimental / Overrides Where Supported) */
+
+/*----------------------
+  Equal Height Columns
+-----------------------*/
+
+/* Flexbox (Experimental / Overrides Where Supported) */
+
+/*-------------------
+      Doubling
+--------------------*/
+
+/* Tablet Only */
+
+/* Mobily Only */
+
+/*-------------------
+      Stackable
+--------------------*/
+
+@media only screen and (max-width: 767px) {
+  .ui.stackable.grid {
+    display: block !important;
+    width: auto;
+    margin-left: 0em !important;
+    margin-right: 0em !important;
+    padding: 0em;
+  }
+
+  .ui.stackable.grid > .wide.column,
+  .ui.stackable.grid > .column:not(.row) {
+    display: block !important;
+    width: auto !important;
+    margin: 0em 0em !important;
+    box-shadow: none !important;
+    float: none !important;
+    padding: 1rem 1rem !important;
+  }
+
+  /* Don't pad inside segment or nested grid */
+
+  /* Equal Height Stackable */
+
+  /* Divided Stackable */
+}
+
+/*----------------------
+     Only (Device)
+-----------------------*/
+
+/* These include arbitrary class repetitions for forced specificity */
+
+/* Mobile Only Hide */
+
+/* Tablet Only Hide */
+
+/* Computer Only Hide */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Menu
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Standard
+*******************************/
+
+/*--------------
+      Menu
+---------------*/
+
+.ui.menu {
+  margin: 1rem 0rem;
+  background: #ffffff;
+  font-size: 0em;
+  font-weight: normal;
+  box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.15), 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.2857rem;
+}
+
+.ui.menu:after {
+  content: '';
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+.ui.menu:first-child {
+  margin-top: 0rem;
+}
+
+/*--------------
+     Colors
+---------------*/
+
+/* Text Color */
+
+.ui.menu .item {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Hover */
+
+/*--------------
+      Items
+---------------*/
+
+.ui.menu .item {
+  position: relative;
+  display: inline-block;
+  padding: 0.78571em 0.95em;
+  border-top: 0em solid transparent;
+  background: none;
+  vertical-align: middle;
+  line-height: 1;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Floated Content */
+
+.ui.menu > .item:first-child {
+  border-radius: 0.2857rem 0px 0px 0.2857rem;
+}
+
+/*--------------
+    Borders
+---------------*/
+
+.ui.menu .item:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  right: 0px;
+  width: 1px;
+  height: 100%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+/*--------------
+  Text Content
+---------------*/
+
+/*--------------
+      Icons
+---------------*/
+
+.ui.menu .item > i.icon {
+  opacity: 0.75;
+  float: none;
+  margin: 0em 0.25em 0em 0em;
+}
+
+/*--------------
+     Button
+---------------*/
+
+/*--------------
+     Inputs
+---------------*/
+
+/* Resizes */
+
+/*--------------
+     Header
+---------------*/
+
+/*--------------
+    Dropdowns
+---------------*/
+
+/* Dropdown */
+
+/* Menu Position */
+
+/* Secondary Menu Dropdown */
+
+/* Even Width Menu Dropdown */
+
+/*--------------
+     Labels
+---------------*/
+
+/*--------------
+     Images
+---------------*/
+
+/*******************************
+             States
+*******************************/
+
+/*--------------
+      Hover
+---------------*/
+
+.ui.menu > .link.item:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*--------------
+     Pressed
+---------------*/
+
+.ui.menu .link.item:active,
+.ui.menu a.item:active {
+  background: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*--------------
+     Active
+---------------*/
+
+/* Vertical */
+
+/*--------------
+  Active Hover
+---------------*/
+
+/*--------------
+     Disabled
+---------------*/
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+    Vertical
+---------------*/
+
+.ui.vertical.menu {
+  background: #ffffff;
+}
+
+/*--- Item ---*/
+
+.ui.vertical.menu .item {
+  background: none;
+  display: block;
+  height: auto !important;
+  border-top: none;
+  border-left: 0em solid transparent;
+  border-right: none;
+}
+
+.ui.vertical.menu > .item:first-child {
+  border-radius: 0.2857rem 0.2857rem 0px 0px;
+}
+
+.ui.vertical.menu > .item:last-child {
+  border-radius: 0px 0px 0.2857rem 0.2857rem;
+}
+
+/*--- Label ---*/
+
+/*--- Icon ---*/
+
+.ui.vertical.menu .item > i.icon {
+  width: 1.18em;
+  float: right;
+  margin: 0em 0em 0em 0.5em;
+}
+
+/*--- Border ---*/
+
+.ui.vertical.menu .item:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 0px;
+  width: 100%;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.1) 1.5em, rgba(0, 0, 0, 0.03) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.1) 1.5em, rgba(0, 0, 0, 0.03) 100%);
+  height: 1px;
+}
+
+.ui.vertical.menu .item:first-child:before {
+  background: none !important;
+}
+
+/*--- Dropdown ---*/
+
+/*--- Sub Menu ---*/
+
+/*--------------
+     Tiered
+---------------*/
+
+/* Sub Menu */
+
+/* Sub Menu Divider */
+
+/* Sub Menu Hover */
+
+/* Sub Menu Active */
+
+/* Inverted Tiered Menu */
+
+/* Tiered Pointing */
+
+/*--------------
+     Tabular
+---------------*/
+
+/* Hover */
+
+/* Active */
+
+/* Coupling with segment for attachment */
+
+/*--------------
+   Pagination
+---------------*/
+
+/* Active */
+
+/*--------------
+   Secondary
+---------------*/
+
+/* Hover */
+
+/* Active */
+
+/* Inverted */
+
+/* Disable variations */
+
+/*---------------------
+   Secondary Vertical
+-----------------------*/
+
+/* Inverted */
+
+/* Hover */
+
+/* Pressed */
+
+/* Active */
+
+/*---------------------
+   Secondary Pointing
+-----------------------*/
+
+/* Item Types */
+
+/* Hover */
+
+/* Pressed */
+
+/* Active */
+
+/* Secondary Vertical Pointing */
+
+/* Hover */
+
+/* Pressed */
+
+/* Active */
+
+/* Inverted Vertical Pointing Secondary */
+
+/*--------------
+    Text Menu
+---------------*/
+
+/*--- fluid text ---*/
+
+/*--- vertical text ---*/
+
+/*--- hover ---*/
+
+/*--- active ---*/
+
+/* disable variations */
+
+/* Inverted */
+
+/* Fluid */
+
+/*--------------
+    Icon Only
+---------------*/
+
+/* Item Icon Only */
+
+/*--- inverted ---*/
+
+/*--------------
+   Labeled Icon
+---------------*/
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+    Colors
+---------------*/
+
+/*--- Light Colors  ---*/
+
+/*--------------
+    Inverted
+---------------*/
+
+/*--- Border ---*/
+
+/*--- Hover ---*/
+
+/*--- Pressed ---*/
+
+/*--- Active ---*/
+
+/*--- Pointers ---*/
+
+/*--------------
+    Selection
+---------------*/
+
+/*--------------
+     Floated
+---------------*/
+
+/*--------------
+ Inverted Colors
+---------------*/
+
+/*--- Light Colors  ---*/
+
+/*--- Inverted Colors  ---*/
+
+/* Blue */
+
+/* Green */
+
+/* Orange */
+
+/* Pink */
+
+/* Purple */
+
+/* Red */
+
+/* Teal */
+
+/* Yellow */
+
+/*--------------
+     Fitted
+---------------*/
+
+/*--------------
+   Borderless
+---------------*/
+
+/*-------------------
+       Compact
+--------------------*/
+
+/*-------------------
+        Fluid
+--------------------*/
+
+/*-------------------
+      Evenly Sized
+--------------------*/
+
+/*--------------
+     Fixed
+---------------*/
+
+.ui.menu.fixed {
+  position: fixed;
+  z-index: 101;
+  margin: 0em;
+  border: none;
+  width: 100%;
+}
+
+.ui.menu.fixed,
+.ui.menu.fixed .item:first-child,
+.ui.menu.fixed .item:last-child {
+  border-radius: 0px !important;
+}
+
+.ui.fixed.menu,
+.ui.top.fixed.menu {
+  top: 0px;
+  left: 0px;
+  right: auto;
+  bottom: auto;
+}
+
+/* Coupling with Grid */
+
+.ui.fixed.menu + .ui.grid {
+  padding-top: 2.75rem;
+}
+
+/*-------------------
+       Pointing
+--------------------*/
+
+/* Don't double up pointers */
+
+/* Colors */
+
+/*--------------
+    Attached
+---------------*/
+
+/*--------------
+     Sizes
+---------------*/
+
+/* Small */
+
+/* Medium */
+
+.ui.menu .item {
+  font-size: 1rem;
+}
+
+.ui.vertical.menu {
+  width: 15rem;
+}
+
+/* Large */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Message
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Message
+*******************************/
+
+/*--------------
+     Content
+---------------*/
+
+/* Header */
+
+/* Default font size */
+
+/* Paragraph */
+
+/* List */
+
+/* Icon */
+
+/* Close Icon */
+
+/* First / Last Element */
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+    Visible
+---------------*/
+
+/*--------------
+     Hidden
+---------------*/
+
+/*******************************
+            Variations
+*******************************/
+
+/*--------------
+    Compact
+---------------*/
+
+/*--------------
+    Attached
+---------------*/
+
+/*--------------
+      Icon
+---------------*/
+
+/*--------------
+    Floating
+---------------*/
+
+/*--------------
+     Colors
+---------------*/
+
+/*--------------
+     Types
+---------------*/
+
+/* Positive */
+
+/* Negative */
+
+/* Info */
+
+/* Warning */
+
+/* Error */
+
+/* Success */
+
+/* Colors */
+
+/*--------------
+     Sizes
+---------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Table
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Table
+*******************************/
+
+/* Prototype */
+
+/*******************************
+             Parts
+*******************************/
+
+/* Table Content */
+
+/* Headers */
+
+/* Footer */
+
+/* Table Row */
+
+/* Table Cells */
+
+/* Icons */
+
+/* Table Segment */
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+  /* Clear BG Colors */
+
+  /* Definition Table */
+}
+
+/*******************************
+            Coupling
+*******************************/
+
+/* UI Image */
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+    Complex
+---------------*/
+
+/*--------------
+   Definition
+---------------*/
+
+/* Remove Border */
+
+/* Highlight Defining Column */
+
+/* Fix 2nd Column */
+
+/*******************************
+             States
+*******************************/
+
+/*--------------
+    Positive
+---------------*/
+
+/*--------------
+     Negative
+---------------*/
+
+/*--------------
+      Error
+---------------*/
+
+/*--------------
+     Warning
+---------------*/
+
+/*--------------
+     Active
+---------------*/
+
+/*--------------
+     Disabled
+---------------*/
+
+/*******************************
+          Variations
+*******************************/
+
+/*--------------
+    Stackable
+---------------*/
+
+@media only screen and (max-width: 991px) {
+  /* Clear BG Colors */
+
+  /* Definition Table */
+}
+
+/*--------------
+     Aligned
+---------------*/
+
+/*--------------
+    Collapsing
+---------------*/
+
+/*--------------
+     Attached
+---------------*/
+
+/* All */
+
+/* Top */
+
+/* Bottom */
+
+/*--------------
+     Striped
+---------------*/
+
+/* Table Striping */
+
+/* Stripes */
+
+/*-------------------
+       Colors
+--------------------*/
+
+/*-------------------
+   Inverted Colors
+--------------------*/
+
+/*--------------
+  Column Count
+---------------*/
+
+/* Grid Based */
+
+/* Column Width */
+
+/*--------------
+    Sortable
+---------------*/
+
+/* Hover */
+
+/* Sorted */
+
+/* Sorted Hover */
+
+/* Inverted */
+
+/*--------------
+    Inverted
+---------------*/
+
+/* Text Color */
+
+/* Definition */
+
+/*--------------
+   Collapsing
+---------------*/
+
+/*--------------
+      Basic
+---------------*/
+
+/* Very Basic */
+
+/*--------------
+     Celled
+---------------*/
+
+/*--------------
+     Padded
+---------------*/
+
+/* Very */
+
+/*--------------
+     Compact
+---------------*/
+
+/* Very */
+
+/*--------------
+      Sizes
+---------------*/
+
+/* Small */
+
+/* Standard */
+
+/* Large */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Ad
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2013 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+         Advertisement
+*******************************/
+
+/*--------------
+     Common
+---------------*/
+
+/* Leaderboard */
+
+/* Medium Rectangle */
+
+/* Large Rectangle */
+
+/* Half Page */
+
+/*--------------
+     Square
+---------------*/
+
+/* Square */
+
+/* Small Square */
+
+/*--------------
+    Rectangle
+---------------*/
+
+/* Small Rectangle */
+
+/* Vertical Rectangle */
+
+/*--------------
+     Button
+---------------*/
+
+/*--------------
+   Skyscrapers
+---------------*/
+
+/* Skyscraper */
+
+/* Wide Skyscraper */
+
+/*--------------
+     Banners
+---------------*/
+
+/* Banner */
+
+/* Vertical Banner */
+
+/* Top Banner */
+
+/* Half Banner */
+
+/*--------------
+    Boards
+---------------*/
+
+/* Leaderboard */
+
+/* Billboard */
+
+/*--------------
+    Panorama
+---------------*/
+
+/* Panorama */
+
+/*--------------
+     Netboard
+---------------*/
+
+/* Netboard */
+
+/*--------------
+     Mobile
+---------------*/
+
+/* Large Mobile Banner */
+
+/* Mobile Leaderboard */
+
+/*******************************
+             Types
+*******************************/
+
+/* Mobile Sizes */
+
+/*******************************
+           Variations
+*******************************/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Item
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Standard
+*******************************/
+
+/*--------------
+      Card
+---------------*/
+
+/*--------------
+      Cards
+---------------*/
+
+/* Clearing */
+
+/* Consecutive Card Groups Preserve Row Spacing */
+
+/*--------------
+  Rounded Edges
+---------------*/
+
+/*--------------
+     Images
+---------------*/
+
+/*--------------
+     Content
+---------------*/
+
+/* Default Header Size */
+
+/*--------------
+     Floated
+---------------*/
+
+/*--------------
+     Aligned
+---------------*/
+
+/*--------------
+  Content Image
+---------------*/
+
+/*--------------
+   Description
+---------------*/
+
+/*--------------
+    Paragraph
+---------------*/
+
+/*--------------
+      Meta
+---------------*/
+
+/*--------------
+      Links
+---------------*/
+
+/* Generic */
+
+/* Header */
+
+/* Meta */
+
+/*--------------
+     Buttons
+---------------*/
+
+/*--------------
+      Dimmer
+---------------*/
+
+/*--------------
+     Labels
+---------------*/
+
+/*-----Star----- */
+
+/* Icon */
+
+/*-----Like----- */
+
+/* Icon */
+
+/*----------------
+  Extra Content
+-----------------*/
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+        Fluid
+--------------------*/
+
+/*-------------------
+        Link
+--------------------*/
+
+/*-------------------
+       Colors
+--------------------*/
+
+/* Hover */
+
+/*--------------
+   Card Count
+---------------*/
+
+/*-------------------
+      Doubling
+--------------------*/
+
+/* Mobily Only */
+
+/* Tablet Only */
+
+/*-------------------
+      Stackable
+--------------------*/
+
+/*--------------
+      Size
+---------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Comment
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Standard
+*******************************/
+
+/*--------------
+    Comments
+---------------*/
+
+/*--------------
+     Comment
+---------------*/
+
+/*--------------------
+    Nested Comments
+---------------------*/
+
+/*--------------
+     Avatar
+---------------*/
+
+/*--------------
+     Content
+---------------*/
+
+/* If there is an avatar move content over */
+
+/*--------------
+     Author
+---------------*/
+
+/*--------------
+     Metadata
+---------------*/
+
+/*--------------------
+     Comment Text
+---------------------*/
+
+/*--------------------
+     User Actions
+---------------------*/
+
+/*--------------------
+      Reply Form
+---------------------*/
+
+/*******************************
+            State
+*******************************/
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------------
+        Threaded
+---------------------*/
+
+/*--------------------
+        Minimal
+---------------------*/
+
+/*--------------------
+       Sizes
+---------------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Feed
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+         Activity Feed
+*******************************/
+
+/*******************************
+            Content
+*******************************/
+
+/* Event */
+
+/* Event Label */
+
+/* Content */
+
+/* Link */
+
+/*--------------
+      Date
+---------------*/
+
+/*--------------
+     Summary
+---------------*/
+
+/* Summary Image */
+
+/*--------------
+      User
+---------------*/
+
+/*--------------
+   Inline Date
+---------------*/
+
+/* Date inside Summary */
+
+/*--------------
+  Extra Summary
+---------------*/
+
+/* Images */
+
+/* Text */
+
+/*--------------
+      Meta
+---------------*/
+
+/* First element */
+
+/* Action */
+
+/*******************************
+            Variations
+*******************************/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Item
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Standard
+*******************************/
+
+/*--------------
+      Item
+---------------*/
+
+.ui.items > .item {
+  table-layout: fixed;
+  display: table;
+  margin: 1em 0em;
+  width: 100%;
+  min-height: 0px;
+  background: transparent;
+  padding: 0em;
+  border: none;
+  border-radius: 0rem;
+  box-shadow: none;
+  -webkit-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  z-index: '';
+}
+
+/*--------------
+      Items
+---------------*/
+
+.ui.items {
+  margin: 1.5em 0em;
+}
+
+.ui.items:first-child {
+  margin-top: 0em !important;
+}
+
+.ui.items:last-child {
+  margin-bottom: 0em !important;
+}
+
+/*--------------
+      Item
+---------------*/
+
+.ui.items > .item {
+  min-width: 100%;
+}
+
+.ui.items > .item:after {
+  display: block;
+  content: ' ';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.ui.items > .item:first-child {
+  margin-top: 0em;
+}
+
+.ui.items > .item:last-child {
+  margin-bottom: 0em;
+}
+
+/*--------------
+     Images
+---------------*/
+
+/*--------------
+     Content
+---------------*/
+
+/* Default Header Size */
+
+/*--------------
+     Floated
+---------------*/
+
+.ui.items > .item [class*="left floated"] {
+  float: left;
+}
+
+.ui.items > .item [class*="right floated"] {
+  float: right;
+}
+
+/*--------------
+  Content Image
+---------------*/
+
+/*--------------
+   Description
+---------------*/
+
+/*--------------
+    Paragraph
+---------------*/
+
+/*--------------
+      Meta
+---------------*/
+
+/*--------------
+      Links
+---------------*/
+
+/* Generic */
+
+/* Header */
+
+/* Meta */
+
+/*--------------
+     Labels
+---------------*/
+
+/*-----Star----- */
+
+/* Icon */
+
+/*-----Like----- */
+
+/* Icon */
+
+/*----------------
+  Extra Content
+-----------------*/
+
+/*******************************
+          Responsive
+*******************************/
+
+/* Default Image Width */
+
+/* Tablet Only */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ui.items > .item {
+    margin: 1em 0em;
+  }
+}
+
+/* Mobily Only */
+
+@media only screen and (max-width: 767px) {
+  .ui.items > .item {
+    margin: 2em 0em;
+  }
+}
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+       Aligned
+--------------------*/
+
+/*--------------
+     Relaxed
+---------------*/
+
+.ui.relaxed.items > .item {
+  margin: 1.5em 0em;
+}
+
+/*-------------------
+      Divided
+--------------------*/
+
+.ui.divided.items > .item {
+  border-top: 1px solid rgba(39, 41, 43, 0.15);
+  margin: 0em;
+  padding: 1em 0em;
+}
+
+.ui.divided.items > .item:first-child {
+  border-top: none;
+  margin-top: 0em !important;
+  padding-top: 0em !important;
+}
+
+.ui.divided.items > .item:last-child {
+  margin-bottom: 0em !important;
+  padding-bottom: 0em !important;
+}
+
+/* Relaxed Divided */
+
+.ui.relaxed.divided.items > .item {
+  margin: 0em;
+  padding: 1.5em 0em;
+}
+
+/*-------------------
+        Link
+--------------------*/
+
+.ui.items a.item:hover,
+.ui.link.items > .item:hover {
+  cursor: pointer;
+}
+
+.ui.link.items > .item:hover .content .header {
+  color: #00b2f3;
+}
+
+/*--------------
+      Size
+---------------*/
+
+.ui.items > .item {
+  font-size: 1em;
+}
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Statistic
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+           Statistic
+*******************************/
+
+/* Standalone */
+
+/* Grouped */
+
+/*******************************
+            Group
+*******************************/
+
+/* Clearing */
+
+/*******************************
+            Content
+*******************************/
+
+/*--------------
+      Value
+---------------*/
+
+/*--------------
+     Label
+---------------*/
+
+/* Top Label */
+
+/* Bottom Label */
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+   Icon Value
+---------------*/
+
+/*--------------
+   Text Value
+---------------*/
+
+/*--------------
+   Image Value
+---------------*/
+
+/*******************************
+            Variations
+*******************************/
+
+/*--------------
+   Horizontal
+---------------*/
+
+/*--------------
+     Colors
+---------------*/
+
+/*--------------
+    Floated
+---------------*/
+
+/*--------------
+    Inverted
+---------------*/
+
+/*--------------
+     Sizes
+---------------*/
+
+/* Mini */
+
+/* Tiny */
+
+/* Small */
+
+/* Medium */
+
+/* Large */
+
+/* Huge */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Accordion
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Accordion
+*******************************/
+
+/* Title */
+
+/* Default Styling */
+
+/* Content */
+
+/* Default Styling */
+
+/* Arrow */
+
+/*--------------
+    Coupling
+---------------*/
+
+/* Menu */
+
+/* Header */
+
+/*******************************
+            States
+*******************************/
+
+/*******************************
+            Types
+*******************************/
+
+/*--------------
+     Styled
+---------------*/
+
+/* Content */
+
+/* Hover */
+
+/* Active */
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+     Active
+---------------*/
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+     Fluid
+---------------*/
+
+/*--------------
+     Inverted
+---------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+@font-face {
+  font-family: 'Accordion';
+  src: url("data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfOIKAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zryj6HgAAAFwAAAAyGhlYWT/0IhHAAACOAAAADZoaGVhApkB5wAAAnAAAAAkaG10eAJuABIAAAKUAAAAGGxvY2EAjABWAAACrAAAAA5tYXhwAAgAFgAAArwAAAAgbmFtZfC1n04AAALcAAABPHBvc3QAAwAAAAAEGAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDZ//3//wAB/+MPKwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQASAEkAtwFuABMAADc0PwE2FzYXFh0BFAcGJwYvASY1EgaABQgHBQYGBQcIBYAG2wcGfwcBAQcECf8IBAcBAQd/BgYAAAAAAQAAAEkApQFuABMAADcRNDc2MzIfARYVFA8BBiMiJyY1AAUGBwgFgAYGgAUIBwYFWwEACAUGBoAFCAcFgAYGBQcAAAABAAAAAQAAqWYls18PPPUACwIAAAAAAM/9o+4AAAAAz/2j7gAAAAAAtwFuAAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAC3AAEAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAQAAAAC3ABIAtwAAAAAAAAAKABQAHgBCAGQAAAABAAAABgAUAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADAAAAAEAAAAAAAIADgBAAAEAAAAAAAMADAAiAAEAAAAAAAQADABOAAEAAAAAAAUAFgAMAAEAAAAAAAYABgAuAAEAAAAAAAoANABaAAMAAQQJAAEADAAAAAMAAQQJAAIADgBAAAMAAQQJAAMADAAiAAMAAQQJAAQADABOAAMAAQQJAAUAFgAMAAMAAQQJAAYADAA0AAMAAQQJAAoANABaAHIAYQB0AGkAbgBnAFYAZQByAHMAaQBvAG4AIAAxAC4AMAByAGEAdABpAG4AZ3JhdGluZwByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHIAYQB0AGkAbgBnAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") format('truetype'), url("data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAASwAAoAAAAABGgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAS0AAAEtFpovuE9TLzIAAAIkAAAAYAAAAGAIIweQY21hcAAAAoQAAABMAAAATA984gpnYXNwAAAC0AAAAAgAAAAIAAAAEGhlYWQAAALYAAAANgAAADb/0IhHaGhlYQAAAxAAAAAkAAAAJAKZAedobXR4AAADNAAAABgAAAAYAm4AEm1heHAAAANMAAAABgAAAAYABlAAbmFtZQAAA1QAAAE8AAABPPC1n05wb3N0AAAEkAAAACAAAAAgAAMAAAEABAQAAQEBB3JhdGluZwABAgABADr4HAL4GwP4GAQeCgAZU/+Lix4KABlT/4uLDAeLa/iU+HQFHQAAAHkPHQAAAH4RHQAAAAkdAAABJBIABwEBBw0PERQZHnJhdGluZ3JhdGluZ3UwdTF1MjB1RjBEOXVGMERBAAACAYkABAAGAQEEBwoNVp38lA78lA78lA77lA773Z33bxWLkI2Qj44I9xT3FAWOj5CNkIuQi4+JjoePiI2Gi4YIi/uUBYuGiYeHiIiHh4mGi4aLho2Ijwj7FPcUBYeOiY+LkAgO+92L5hWL95QFi5CNkI6Oj4+PjZCLkIuQiY6HCPcU+xQFj4iNhouGi4aJh4eICPsU+xQFiIeGiYaLhouHjYePiI6Jj4uQCA74lBT4lBWLDAoAAAAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDZ//3//wAB/+MPKwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAEAADfYOJZfDzz1AAsCAAAAAADP/aPuAAAAAM/9o+4AAAAAALcBbgAAAAgAAgAAAAAAAAABAAAB4P/gAAACAAAAAAAAtwABAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAEAAAAAtwASALcAAAAAUAAABgAAAAAADgCuAAEAAAAAAAEADAAAAAEAAAAAAAIADgBAAAEAAAAAAAMADAAiAAEAAAAAAAQADABOAAEAAAAAAAUAFgAMAAEAAAAAAAYABgAuAAEAAAAAAAoANABaAAMAAQQJAAEADAAAAAMAAQQJAAIADgBAAAMAAQQJAAMADAAiAAMAAQQJAAQADABOAAMAAQQJAAUAFgAMAAMAAQQJAAYADAA0AAMAAQQJAAoANABaAHIAYQB0AGkAbgBnAFYAZQByAHMAaQBvAG4AIAAxAC4AMAByAGEAdABpAG4AZ3JhdGluZwByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHIAYQB0AGkAbgBnAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Dropdown Icon */
+
+/*******************************
+        User Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Checkbox
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+           Checkbox
+*******************************/
+
+/*--------------
+    Content
+---------------*/
+
+/*--------------
+      Box
+---------------*/
+
+/*--------------
+    Checkmark
+---------------*/
+
+/*--------------
+      Label
+---------------*/
+
+/* Inside */
+
+/* Outside */
+
+/*******************************
+           States
+*******************************/
+
+/*--------------
+      Hover
+---------------*/
+
+/*--------------
+      Down
+---------------*/
+
+/*--------------
+      Focus
+---------------*/
+
+/*--------------
+     Active
+---------------*/
+
+/*--------------
+    Read-Only
+---------------*/
+
+/*--------------
+     Disabled
+---------------*/
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+     Radio
+---------------*/
+
+/* Box */
+
+/* Circle */
+
+/* Radio Checkbox */
+
+/*--------------
+     Slider
+---------------*/
+
+/* Line */
+
+/* Handle */
+
+/* Focus */
+
+/* Hover */
+
+/* Active */
+
+/*--------------
+     Toggle
+---------------*/
+
+/* Switch */
+
+/* Handle */
+
+/* Focus */
+
+/* Hover */
+
+/* Active */
+
+/*******************************
+            Variations
+*******************************/
+
+/*--------------
+     Fitted
+---------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+@font-face {
+  font-family: 'Checkbox';
+  src: url("data:application/x-font-ttf;charset=utf-8;base64,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") format('truetype'), url("data:application/font-woff;charset=utf-8;base64,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") format('woff');
+}
+
+/*  UTF Reference
+.check:before { content: '\e800'; }  ''
+.circle:before { content: '\e801'; }
+.ok-circled:before { content: '\e806'; }
+.ok-circle:before { content: '\e805'; }
+.cancel-circle:before { content: '\e807'; }
+.cancel-circle-1:before { content: '\e804'; }
+.empty-circle:before { content: '\e802'; }
+.radio:before { content: '\e803'; }
+
+*/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Dimmer
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Dimmer
+*******************************/
+
+/* Dimmer Content */
+
+/* Loose Coupling */
+
+/*******************************
+            States
+*******************************/
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+      Page
+---------------*/
+
+/*
+body.dimmable > :not(.dimmer) {
+  filter: @elementStartFilter;
+}
+body.dimmed.dimmable > :not(.dimmer) {
+  filter: @elementEndFilter;
+  transition: @elementTransition;
+}
+*/
+
+/*--------------
+    Aligned
+---------------*/
+
+/*--------------
+    Inverted
+---------------*/
+
+/*--------------
+     Simple
+---------------*/
+
+/* Displays without javascript */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+        User Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Dropdown
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Dropdown
+*******************************/
+
+/*******************************
+            Content
+*******************************/
+
+/*--------------
+      Menu
+---------------*/
+
+/*--------------
+  Hidden Input
+---------------*/
+
+/*--------------
+ Dropdown Icon
+---------------*/
+
+/*--------------
+      Text
+---------------*/
+
+/*--------------
+    Menu Item
+---------------*/
+
+/*--------------
+  Floated Content
+---------------*/
+
+/*--------------
+  Menu Divider
+---------------*/
+
+/*-----------------
+  Item Description
+-------------------*/
+
+/*--------------
+    Sub Menu
+---------------*/
+
+/* Hide Arrow */
+
+/*******************************
+            Coupling
+*******************************/
+
+/*--------------
+   Sub Elements
+---------------*/
+
+/* Icons / Flags / Labels / Image */
+
+/*--------------
+     Image
+---------------*/
+
+/*--------------
+      Menu
+---------------*/
+
+/* Remove Menu Item Divider */
+
+/* Prevent Menu Item Border */
+
+/* Automatically float dropdown menu right on last menu item */
+
+/*--------------
+     Button
+---------------*/
+
+/* No Margin On Icon Button */
+
+/*******************************
+              Types
+*******************************/
+
+/*--------------
+    Selection
+---------------*/
+
+/* Displays like a select box */
+
+/* Compact */
+
+/*  Selection Menu */
+
+/* Scrollbar in IE */
+
+/* Menu Item */
+
+/* Hover */
+
+/* Disabled */
+
+/* Visible */
+
+/* Visible Hover */
+
+/* Active Item */
+
+/* Dropdown Icon */
+
+/* Connecting Border */
+
+/*--------------
+   Searchable
+---------------*/
+
+/* Search Selection */
+
+/* Search Dropdown */
+
+/* Text Layering */
+
+/* Search Selection */
+
+/* Active/Visible Search */
+
+/* Search Menu */
+
+/*--------------
+     Inline
+---------------*/
+
+/*******************************
+            States
+*******************************/
+
+/*--------------------
+        Hover
+----------------------*/
+
+/* Menu Item Hover */
+
+/*--------------------
+        Active
+----------------------*/
+
+/* Menu Item Active */
+
+/*--------------------
+     Default Text
+----------------------*/
+
+/*--------------------
+        Loading
+----------------------*/
+
+/*--------------------
+    Keyboard Select
+----------------------*/
+
+/* Selected Item */
+
+/*--------------------
+    Search Filtered
+----------------------*/
+
+/* Filtered Item */
+
+/*--------------------
+        Error
+----------------------*/
+
+/* Item Hover */
+
+/* Item Active */
+
+/*--------------------
+        Disabled
+----------------------*/
+
+/* Disabled */
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+    Direction
+---------------*/
+
+/* Flyout Direction */
+
+/* Default Side (Right) */
+
+/* Left Flyout Menu */
+
+/*--------------
+     Upward
+---------------*/
+
+/* Active Upward */
+
+/* Selection */
+
+/*--------------
+     Simple
+---------------*/
+
+/* Displays without javascript */
+
+/* Visible */
+
+/*--------------
+      Fluid
+---------------*/
+
+/*--------------
+    Floating
+---------------*/
+
+/*--------------
+     Pointing
+---------------*/
+
+/* Top Left Pointing */
+
+/* Top Right  Pointing */
+
+/* Left Pointing */
+
+/* Right Pointing */
+
+/* Bottom Pointing */
+
+/* Reverse Sub-Menu Direction */
+
+/* Bottom Left */
+
+/* Bottom Right */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/* Dropdown Carets */
+
+@font-face {
+  font-family: 'Dropdown';
+  src: url("data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfuIIAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zjo82LgAAAFwAAABVGhlYWQAQ88bAAACxAAAADZoaGVhAwcB6QAAAvwAAAAkaG10eAS4ABIAAAMgAAAAIGxvY2EBNgDeAAADQAAAABJtYXhwAAoAFgAAA1QAAAAgbmFtZVcZpu4AAAN0AAABRXBvc3QAAwAAAAAEvAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDX//3//wAB/+MPLQADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAIABJQElABMAABM0NzY3BTYXFhUUDwEGJwYvASY1AAUGBwEACAUGBoAFCAcGgAUBEgcGBQEBAQcECQYHfwYBAQZ/BwYAAQAAAG4BJQESABMAADc0PwE2MzIfARYVFAcGIyEiJyY1AAWABgcIBYAGBgUI/wAHBgWABwaABQWABgcHBgUFBgcAAAABABIASQC3AW4AEwAANzQ/ATYXNhcWHQEUBwYnBi8BJjUSBoAFCAcFBgYFBwgFgAbbBwZ/BwEBBwQJ/wgEBwEBB38GBgAAAAABAAAASQClAW4AEwAANxE0NzYzMh8BFhUUDwEGIyInJjUABQYHCAWABgaABQgHBgVbAQAIBQYGgAUIBwWABgYFBwAAAAEAAAABAADZuaKOXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAAAAACgAUAB4AQgBkAIgAqgAAAAEAAAAIABQAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAOAAAAAQAAAAAAAgAOAEcAAQAAAAAAAwAOACQAAQAAAAAABAAOAFUAAQAAAAAABQAWAA4AAQAAAAAABgAHADIAAQAAAAAACgA0AGMAAwABBAkAAQAOAAAAAwABBAkAAgAOAEcAAwABBAkAAwAOACQAAwABBAkABAAOAFUAAwABBAkABQAWAA4AAwABBAkABgAOADkAAwABBAkACgA0AGMAaQBjAG8AbQBvAG8AbgBWAGUAcgBzAGkAbwBuACAAMQAuADAAaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AbgBSAGUAZwB1AGwAYQByAGkAYwBvAG0AbwBvAG4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=") format('truetype'), url("data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAVwAAoAAAAABSgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAdkAAAHZLDXE/09TLzIAAALQAAAAYAAAAGAIIweQY21hcAAAAzAAAABMAAAATA9+4ghnYXNwAAADfAAAAAgAAAAIAAAAEGhlYWQAAAOEAAAANgAAADYAQ88baGhlYQAAA7wAAAAkAAAAJAMHAelobXR4AAAD4AAAACAAAAAgBLgAEm1heHAAAAQAAAAABgAAAAYACFAAbmFtZQAABAgAAAFFAAABRVcZpu5wb3N0AAAFUAAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v4lPh0BR0AAACIDx0AAACNER0AAAAJHQAAAdASAAkBAQgPERMWGyAlKmljb21vb25pY29tb29udTB1MXUyMHVGMEQ3dUYwRDh1RjBEOXVGMERBAAACAYkABgAIAgABAAQABwAKAA0AVgCfAOgBL/yUDvyUDvyUDvuUDvtvi/emFYuQjZCOjo+Pj42Qiwj3lIsFkIuQiY6Hj4iNhouGi4aJh4eHCPsU+xQFiIiGiYaLhouHjYeOCPsU9xQFiI+Jj4uQCA77b4v3FBWLkI2Pjo8I9xT3FAWPjo+NkIuQi5CJjogI9xT7FAWPh42Hi4aLhomHh4eIiIaJhosI+5SLBYaLh42HjoiPiY+LkAgO+92d928Vi5CNkI+OCPcU9xQFjo+QjZCLkIuPiY6Hj4iNhouGCIv7lAWLhomHh4iIh4eJhouGi4aNiI8I+xT3FAWHjomPi5AIDvvdi+YVi/eUBYuQjZCOjo+Pj42Qi5CLkImOhwj3FPsUBY+IjYaLhouGiYeHiAj7FPsUBYiHhomGi4aLh42Hj4iOiY+LkAgO+JQU+JQViwwKAAAAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA8NoB4P/g/+AB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDw2v/9//8AAAAAACDw1//9//8AAf/jDy0AAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAAA5emozXw889QALAgAAAAAA0ABHWAAAAADQAEdYAAAAAAElAW4AAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAASUAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAASUAAAElAAAAtwASALcAAAAAUAAACAAAAAAADgCuAAEAAAAAAAEADgAAAAEAAAAAAAIADgBHAAEAAAAAAAMADgAkAAEAAAAAAAQADgBVAAEAAAAAAAUAFgAOAAEAAAAAAAYABwAyAAEAAAAAAAoANABjAAMAAQQJAAEADgAAAAMAAQQJAAIADgBHAAMAAQQJAAMADgAkAAMAAQQJAAQADgBVAAMAAQQJAAUAFgAOAAMAAQQJAAYADgA5AAMAAQQJAAoANABjAGkAYwBvAG0AbwBvAG4AVgBlAHIAcwBpAG8AbgAgADEALgAwAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG4AUgBlAGcAdQBsAGEAcgBpAGMAbwBtAG8AbwBuAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Sub Menu */
+
+/* Upward Dropdown */
+
+/* Vertical Menu Dropdown */
+
+/* Icons for Reference
+.dropdown.down.icon {
+  content: "\f0d7";
+}
+.dropdown.up.icon {
+  content: "\f0d8";
+}
+.dropdown.left.icon {
+  content: "\f0d9";
+}
+.dropdown.icon.icon {
+  content: "\f0da";
+}
+*/
+
+/*******************************
+        User Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Modal
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Modal
+*******************************/
+
+.ui.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  top: 50%;
+  left: 50%;
+  text-align: left;
+  width: 90%;
+  margin-left: -45%;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2857rem;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  will-change: top, left, margin, transform, opacity;
+}
+
+.ui.modal > .icon:first-child + * {
+  border-top-left-radius: 0.2857rem;
+  border-top-right-radius: 0.2857rem;
+}
+
+.ui.modal > :last-child {
+  border-bottom-left-radius: 0.2857rem;
+  border-bottom-right-radius: 0.2857rem;
+}
+
+/*******************************
+            Content
+*******************************/
+
+/*--------------
+     Close
+---------------*/
+
+.ui.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  top: -2.5rem;
+  right: -2.5rem;
+  z-index: 1;
+  opacity: 0.8;
+  font-size: 1.25em;
+  color: #ffffff;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.625rem 0rem 0rem 0rem;
+}
+
+.ui.modal > .close:hover {
+  opacity: 1;
+}
+
+/*--------------
+     Header
+---------------*/
+
+.ui.modal > .header {
+  display: block;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.05)) #ffffff;
+  margin: 0em;
+  padding: 1.2rem 2rem;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-size: 1.6em;
+  line-height: 1.3em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid rgba(39, 41, 43, 0.15);
+}
+
+/*--------------
+     Content
+---------------*/
+
+.ui.modal > .content {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.4;
+  padding: 2rem;
+  background: #ffffff;
+}
+
+/* Image */
+
+/* Description */
+
+/*rtl:ignore*/
+
+/*--------------
+     Actions
+---------------*/
+
+.ui.modal .actions {
+  background: #efefef;
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(39, 41, 43, 0.15);
+  text-align: right;
+}
+
+.ui.modal .actions > .button {
+  margin-left: 0.75em;
+}
+
+/*-------------------
+       Responsive
+--------------------*/
+
+/* Modal Width */
+
+@media only screen and (max-width: 767px) {
+  .ui.modal {
+    width: 95%;
+    margin: 0em 0em 0em -47.5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ui.modal {
+    width: 88%;
+    margin: 0em 0em 0em -44%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .ui.modal {
+    width: 74%;
+    margin: 0em 0em 0em -37%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .ui.modal {
+    width: 56%;
+    margin: 0em 0em 0em -28%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .ui.modal {
+    width: 42%;
+    margin: 0em 0em 0em -21%;
+  }
+}
+
+/* Tablet and Mobile */
+
+@media only screen and (max-width: 992px) {
+  .ui.modal > .header {
+    padding-right: 2.25rem;
+  }
+
+  .ui.modal > .close {
+    top: 0.905rem;
+    right: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  .ui.modal > .header {
+    padding: 0.75rem 1rem !important;
+    padding-right: 2.25rem !important;
+  }
+
+  .ui.modal > .content {
+    display: block;
+    padding: 1rem !important;
+  }
+
+  .ui.modal > .close {
+    top: 0.5rem !important;
+    right: 0.5rem !important;
+  }
+
+  /*rtl:ignore*/
+
+  /*rtl:ignore*/
+
+  /* Let Buttons Stack */
+
+  .ui.modal > .actions {
+    padding: 1rem 1rem 0rem !important;
+  }
+
+  .ui.modal .actions > .button {
+    margin-bottom: 1rem;
+  }
+}
+
+/*******************************
+             Types
+*******************************/
+
+/* Tablet and Mobile */
+
+/*******************************
+            Variations
+*******************************/
+
+/* A modal that cannot fit on the page */
+
+/*******************************
+             States
+*******************************/
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+   Full Screen
+---------------*/
+
+/*--------------
+      Size
+---------------*/
+
+.ui.modal {
+  font-size: 1rem;
+}
+
+/* Small */
+
+/* Small Modal Width */
+
+/* Large Modal Width */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Nag
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Nag
+*******************************/
+
+/*******************************
+             States
+*******************************/
+
+/* Hover */
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+     Static
+---------------*/
+
+/*--------------
+     Fixed
+---------------*/
+
+/*--------------
+     Bottom
+---------------*/
+
+/*--------------
+     White
+---------------*/
+
+/*******************************
+           Groups
+*******************************/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+        User Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Popup
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Popup
+*******************************/
+
+/*******************************
+            Types
+*******************************/
+
+/*--------------
+     Spacing
+---------------*/
+
+/*--------------
+     Pointer
+---------------*/
+
+/*--- Below ---*/
+
+/*--- Above ---*/
+
+/*--- Left Center ---*/
+
+/*--- Right Center  ---*/
+
+/*******************************
+            Coupling
+*******************************/
+
+/* Immediate Nested Grid */
+
+/*******************************
+            States
+*******************************/
+
+/*******************************
+            Variations
+*******************************/
+
+/*--------------
+     Basic
+---------------*/
+
+/*--------------
+     Wide
+---------------*/
+
+/*--------------
+     Fluid
+---------------*/
+
+/*--------------
+     Colors
+---------------*/
+
+/* Inverted colors  */
+
+/*--------------
+     Flowing
+---------------*/
+
+/*--------------
+     Sizes
+---------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+        User Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Progress Bar
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Progress
+*******************************/
+
+/* Indicating */
+
+/* Indicating Label */
+
+/* Single Digits */
+
+/* Indicating Success */
+
+/*******************************
+            Content
+*******************************/
+
+/* Activity Bar */
+
+/* Percent Complete */
+
+/* Label */
+
+/*******************************
+             States
+*******************************/
+
+/*--------------
+     Success
+---------------*/
+
+/*--------------
+     Warning
+---------------*/
+
+/*--------------
+     Error
+---------------*/
+
+/*--------------
+     Active
+---------------*/
+
+/*--------------
+    Disabled
+---------------*/
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------
+    Inverted
+---------------*/
+
+/*--------------
+    Attached
+---------------*/
+
+/* bottom attached */
+
+/* top attached */
+
+/* Coupling */
+
+/*--------------
+     Colors
+---------------*/
+
+/*--------------
+     Sizes
+---------------*/
+
+/*******************************
+            Progress
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Rating
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+           Rating
+*******************************/
+
+/* Icon */
+
+/*******************************
+             Types
+*******************************/
+
+/*-------------------
+        Star
+--------------------*/
+
+/* Inactive */
+
+/* Active Star */
+
+/* Selected Star */
+
+/*-------------------
+        Heart
+--------------------*/
+
+/* Active Heart */
+
+/* Selected Heart */
+
+/*******************************
+             States
+*******************************/
+
+/* Inactive Icon */
+
+/* Active Icon */
+
+/* Selected Icon */
+
+/*-------------------
+       Disabled
+--------------------*/
+
+/* disabled rating */
+
+/*-------------------
+     Interacting (Active)
+--------------------*/
+
+/* Selected Rating */
+
+/*******************************
+          Variations
+*******************************/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+@font-face {
+  font-family: 'Rating';
+  src: url("data:application/x-font-ttf;charset=utf-8;base64,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") format('truetype'), url("data:application/font-woff;charset=utf-8;base64,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kIiRi5MI5vdUFfcni4vCBYufhJx8mn2ZepJ3i3aLeoR9fX18g3qLdwiLVAUO+yaLshWL+AQFi5GNkY+RjpCQj5KNj42PjI+LCPfAiwWPi4+Kj4mRiZCHj4aPhY2Fi4UIi/wEBYuEiYWHhoeGhoeFiIiKhoqHi4GLhI6EkQj7EvcN+xL7DQWEhYOIgouHi4eLh42EjoaPiJCHkImRi5IIDov3XRWLko2Rj5Kltq+vuKW4pbuZvYu9i7t9uHG4ca9npWCPhI2Fi4SLhYmEh4RxYGdoXnAIXnFbflmLWYtbmF6lXqZnrnG2h5KJkouRCLCLFaRkq2yxdLF0tH+4i7iLtJexorGiq6qksm64Z61goZZ3kXaLdItnfm1ycnJybX9oiwhoi22XcqRypH6pi6+LopGglp9gdWdpbl4I9xiwFYuHjIiOiI6IjoqPi4+LjoyOjo2OjY6Lj4ubkJmXl5eWmZGbi4+LjoyOjo2OjY6LjwiLj4mOiY6IjYiNh4tzi3eCenp6eoJ3i3MIDov3XRWLko2Sj5GouK+utqW3pbqYvouci5yJnIgIm6cFjY6NjI+LjIuNi42JjYqOio+JjomOiY6KjomOiY6JjoqNioyKjomMiYuHi4qLiouLCHdnbVVjQ2NDbVV3Zwh9cgWJiIiJiIuJi36SdJiIjYmOi46LjY+UlJlvl3KcdJ90oHeie6WHkYmSi5IIsIsVqlq0Z711CKGzBXqXfpqCnoKdhp6LoIuikaCWn2B1Z2luXgj3GLAVi4eMiI6IjoiOio+Lj4uOjI6OjY6NjouPi5uQmZeXl5aZkZuLj4uOjI6OjY6NjouPCIuPiY6JjoiNiI2Hi3OLd4J6enp6gneLcwji+10VoLAFtI+wmK2hrqKnqKKvdq1wp2uhCJ2rBZ1/nHycepx6mHqWeY+EjYWLhIuEiYWHhIR/gH1+fG9qaXJmeWV5Y4Jhiwi53BXb9yQFjIKMg4uEi3CDc3x1fHV3fHOBCA6L1BWL90sFi5WPlJKSkpKTj5aLCNmLBZKPmJqepJaZlZeVlY+Qj5ONl42WjpeOmI+YkZWTk5OSk46Vi5uLmYiYhZiFlIGSfgiSfo55i3WLeYd5gXgIvosFn4uchJl8mn2Seot3i3qGfIJ9jYSLhYuEi3yIfoR+i4eLh4uHi3eGen99i3CDdnt8CHt8dYNwiwhmiwV5i3mNeY95kHeRc5N1k36Ph4sIOYsFgIuDjoSShJKHlIuVCLCdFYuGjIePiI+Hj4mQi5CLj42Pj46OjY+LkIuQiZCIjoePh42Gi4aLh4mHh4eIioaLhgjUeRWUiwWNi46Lj4qOi4+KjYqOi4+Kj4mQio6KjYqNio+Kj4mQio6KjIqzfquEpIsIrosFr4uemouri5CKkYqQkY6QkI6SjpKNkouSi5KJkoiRlZWQlouYi5CKkImRiZGJj4iOCJGMkI+PlI+UjZKLkouViJODk4SSgo+CiwgmiwWLlpCalJ6UnpCbi5aLnoiYhJSFlH+QeYuGhoeDiYCJf4h/h3+IfoWBg4KHh4SCgH4Ii4qIiYiGh4aIh4mIiIiIh4eGh4aHh4eHiIiHiIeHiIiHiIeKh4mIioiLCIKLi/tLBQ6L90sVi/dLBYuVj5OSk5KSk46WiwjdiwWPi5iPoZOkk6CRnZCdj56Nn4sIq4sFpougg5x8m3yTd4txCIuJBZd8kHuLd4uHi4eLh5J+jn6LfIuEi4SJhZR9kHyLeot3hHp8fH19eoR3iwhYiwWVeI95i3mLdIh6hH6EfoKBfoV+hX2He4uBi4OPg5KFkYaTh5SHlYiTipOKk4qTiJMIiZSIkYiPgZSBl4CaeKR+moSPCD2LBYCLg4+EkoSSh5SLlQiw9zgVi4aMh4+Ij4ePiZCLkIuPjY+Pjo6Nj4uQi5CJkIiOh4+HjYaLhouHiYeHh4iKhouGCNT7OBWUiwWOi46Kj4mPio+IjoiPh4+IjoePiI+Hj4aPho6HjoiNiI6Hj4aOho6Ii4qWfpKDj4YIk4ORgY5+j36OgI1/jYCPg5CGnYuXj5GUkpSOmYuei5aGmoKfgp6GmouWCPCLBZSLlI+SkpOTjpOLlYuSiZKHlIeUho+Fi46PjY+NkY2RjJCLkIuYhpaBlY6RjZKLkgiLkomSiJKIkoaQhY6MkIyRi5CLm4aXgpOBkn6Pe4sIZosFcotrhGN9iouIioaJh4qHiomKiYqIioaKh4mHioiKiYuHioiLh4qIi4mLCIKLi/tLBQ77lIv3txWLkpCPlo0I9yOgzPcWBY6SkI+RiwiL/BL7FUcFh4mHioiLh4uIjImOiY6KjouPi4yLjYyOCKP3IyPwBYaQiZCLjwgOi/fFFYu1l6yjoqOjrZe2i5aLl4mYh5eHloWWhJaElIWShZOE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") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Empty Star */
+
+/* Active Star */
+
+/*-------------------
+        Star
+--------------------*/
+
+/* Unfilled Star */
+
+/* Active Star */
+
+/* Partial */
+
+/*-------------------
+        Heart
+--------------------*/
+
+/* Empty Heart
+.ui.heart.rating .icon:before {
+  content: '\f08a';
+}
+*/
+
+/* Active */
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Search
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Search
+*******************************/
+
+/*--------------
+     Icon
+---------------*/
+
+/*--------------
+    Results
+---------------*/
+
+/*--------------
+    Result
+---------------*/
+
+/* Image */
+
+/*--------------
+      Info
+---------------*/
+
+/*--------------
+    Message
+---------------*/
+
+/* View All Results */
+
+/*******************************
+            States
+*******************************/
+
+/*--------------------
+       Loading
+---------------------*/
+
+/*--------------
+      Hover
+---------------*/
+
+/*--------------
+      Active
+---------------*/
+
+/*******************************
+           Types
+*******************************/
+
+/*--------------
+    Categories
+---------------*/
+
+/* Category */
+
+/* Category Result */
+
+/* Category Result Name */
+
+/*******************************
+           Variations
+*******************************/
+
+/*-------------------
+     Left / Right
+--------------------*/
+
+/*--------------
+    Fluid
+---------------*/
+
+/*--------------
+      Sizes
+---------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Shape
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+              Shape
+*******************************/
+
+/*******************************
+             Types
+*******************************/
+
+/*******************************
+          Variations
+*******************************/
+
+/*******************************
+             States
+*******************************/
+
+/*--------------
+    Loading
+---------------*/
+
+/*--------------
+    Animating
+---------------*/
+
+/*--------------
+      CSS
+---------------*/
+
+/*--------------
+     Active
+---------------*/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+        User Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Sidebar
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Sidebar
+*******************************/
+
+/* Sidebar Menu */
+
+.ui.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: none;
+  transition: none;
+  will-change: transform;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100% !important;
+  border-radius: 0em !important;
+  margin: 0em !important;
+  overflow-y: auto !important;
+  z-index: 102;
+}
+
+/* GPU Layers for Child Elements */
+
+.ui.sidebar > * {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+}
+
+/*--------------
+   Direction
+---------------*/
+
+.ui.left.sidebar {
+  right: auto;
+  left: 0px;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+/*--------------
+     Pushable
+---------------*/
+
+/* Whole Page */
+
+/* Page Context */
+
+/*--------------
+     Fixed
+---------------*/
+
+/*--------------
+     Page
+---------------*/
+
+/*--------------
+     Dimmer
+---------------*/
+
+/*--------------
+    Coupling
+---------------*/
+
+.ui.sidebar.menu .item {
+  border-radius: 0em !important;
+}
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+     Dimmed
+---------------*/
+
+/*--------------
+    Animating
+---------------*/
+
+/*--------------
+     Visible
+---------------*/
+
+/* Shadow Direction */
+
+/* Visible On Load */
+
+/* opposite sides visible forces content overlay */
+
+/*--------------
+       iOS
+---------------*/
+
+/*
+  iOS incorrectly sizes document when content
+  is presented outside of view with 2Dtranslate
+*/
+
+/*******************************
+          Variations
+*******************************/
+
+/*--------------
+     Width
+---------------*/
+
+/* Left / Right */
+
+.ui.left.sidebar {
+  width: 260px;
+}
+
+/* Left Visible */
+
+/* Right Visible */
+
+/*******************************
+          Animations
+*******************************/
+
+/*--------------
+    Overlay
+---------------*/
+
+/* Set-up */
+
+/* Initial */
+
+/* Animation */
+
+/* End - Sidebar */
+
+/* End - Pusher */
+
+/*--------------
+      Push
+---------------*/
+
+/* Initial */
+
+/* Sidebar - Initial */
+
+/* End */
+
+/*--------------
+    Uncover
+---------------*/
+
+/* Initial */
+
+/* End */
+
+/*--------------
+   Slide Along
+---------------*/
+
+/* Initial */
+
+/* Sidebar - Initial */
+
+/* Animation */
+
+/* End */
+
+/*--------------
+   Slide Out
+---------------*/
+
+/* Initial */
+
+/* Sidebar - Initial */
+
+/* Animation */
+
+/* End */
+
+/*--------------
+   Scale Down
+---------------*/
+
+/* Initial */
+
+/* Sidebar - Initial  */
+
+/* Pusher - Initial */
+
+/* Animation */
+
+/* End */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Sticky
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Sticky
+*******************************/
+
+.ui.sticky {
+  position: static;
+  -webkit-transition: width 0.2s ease, height 0.2s ease, top 0.2s ease, bottom 0.2s ease;
+  transition: width 0.2s ease, height 0.2s ease, top 0.2s ease, bottom 0.2s ease;
+  z-index: 800;
+}
+
+/*******************************
+            States
+*******************************/
+
+/* Bound */
+
+/* Fixed */
+
+.ui.sticky.fixed {
+  position: fixed;
+  left: auto;
+  right: auto;
+}
+
+/* Bound/Fixed Position */
+
+.ui.sticky.fixed.top {
+  top: 0px;
+  bottom: auto;
+}
+
+/*******************************
+            Types
+*******************************/
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Tab
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+           UI Tabs
+*******************************/
+
+/*******************************
+             States
+*******************************/
+
+/*--------------------
+       Active
+---------------------*/
+
+/*--------------------
+       Loading
+---------------------*/
+
+/*******************************
+         Tab Overrides
+*******************************/
+
+/*******************************
+        User Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Table
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+             Table
+*******************************/
+
+/* Prototype */
+
+/*******************************
+             Parts
+*******************************/
+
+/* Table Content */
+
+/* Headers */
+
+/* Footer */
+
+/* Table Row */
+
+/* Table Cells */
+
+/* Icons */
+
+/* Table Segment */
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+  /* Clear BG Colors */
+
+  /* Definition Table */
+}
+
+/*******************************
+            Coupling
+*******************************/
+
+/* UI Image */
+
+/*******************************
+             Types
+*******************************/
+
+/*--------------
+    Complex
+---------------*/
+
+/*--------------
+   Definition
+---------------*/
+
+/* Remove Border */
+
+/* Highlight Defining Column */
+
+/* Fix 2nd Column */
+
+/*******************************
+             States
+*******************************/
+
+/*--------------
+    Positive
+---------------*/
+
+/*--------------
+     Negative
+---------------*/
+
+/*--------------
+      Error
+---------------*/
+
+/*--------------
+     Warning
+---------------*/
+
+/*--------------
+     Active
+---------------*/
+
+/*--------------
+     Disabled
+---------------*/
+
+/*******************************
+          Variations
+*******************************/
+
+/*--------------
+    Stackable
+---------------*/
+
+@media only screen and (max-width: 991px) {
+  /* Clear BG Colors */
+
+  /* Definition Table */
+}
+
+/*--------------
+     Aligned
+---------------*/
+
+/*--------------
+    Collapsing
+---------------*/
+
+/*--------------
+     Attached
+---------------*/
+
+/* All */
+
+/* Top */
+
+/* Bottom */
+
+/*--------------
+     Striped
+---------------*/
+
+/* Table Striping */
+
+/* Stripes */
+
+/*-------------------
+       Colors
+--------------------*/
+
+/*-------------------
+   Inverted Colors
+--------------------*/
+
+/*--------------
+  Column Count
+---------------*/
+
+/* Grid Based */
+
+/* Column Width */
+
+/*--------------
+    Sortable
+---------------*/
+
+/* Hover */
+
+/* Sorted */
+
+/* Sorted Hover */
+
+/* Inverted */
+
+/*--------------
+    Inverted
+---------------*/
+
+/* Text Color */
+
+/* Definition */
+
+/*--------------
+   Collapsing
+---------------*/
+
+/*--------------
+      Basic
+---------------*/
+
+/* Very Basic */
+
+/*--------------
+     Celled
+---------------*/
+
+/*--------------
+     Padded
+---------------*/
+
+/* Very */
+
+/*--------------
+     Compact
+---------------*/
+
+/* Very */
+
+/*--------------
+      Sizes
+---------------*/
+
+/* Small */
+
+/* Standard */
+
+/* Large */
+
+/*******************************
+         Theme Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Transition
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributorss
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+          Transitions
+*******************************/
+
+/*******************************
+            States
+*******************************/
+
+/* Animating */
+
+/* Loading */
+
+/* Hidden */
+
+/* Visible */
+
+/* Disabled */
+
+/*******************************
+          Variations
+*******************************/
+
+/*******************************
+          Transitions
+*******************************/
+
+/*
+  Some transitions adapted from Animate CSS
+  https://github.com/daneden/animate.css
+
+  Additional transitions adapted from Glide
+  by Nick Pettit - https://github.com/nickpettit/glide
+*/
+
+/*--------------
+     Browse
+---------------*/
+
+/* In */
+
+/* Out */
+
+/*--------------
+     Drop
+---------------*/
+
+/* Drop */
+
+/*--------------
+      Fade
+---------------*/
+
+/* In */
+
+/* Out */
+
+/*--------------
+     Flips
+---------------*/
+
+/* In */
+
+/* Out */
+
+/*--------------
+      Scale
+---------------*/
+
+/* In */
+
+/* Out */
+
+/*--------------
+      Fly
+---------------*/
+
+/* Inward */
+
+/* Outward */
+
+/* In */
+
+/* Out */
+
+/*--------------
+     Slide
+---------------*/
+
+/* In */
+
+/* Out */
+
+/*--------------
+     Swing
+---------------*/
+
+/* In */
+
+/* Out */
+
+/*******************************
+       Static Animations
+*******************************/
+
+/*--------------
+    Emphasis
+---------------*/
+
+/* Flash */
+
+/* Shake */
+
+/* Bounce */
+
+/* Tada */
+
+/* Pulse */
+
+/* Rubberband */
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*!
+ * # Semantic UI x.x - Video
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+/*******************************
+            Video
+*******************************/
+
+/*--------------
+     Content
+---------------*/
+
+/* Placeholder Image */
+
+/* Play Icon Overlay */
+
+/* IFrame Embed */
+
+/*******************************
+            States
+*******************************/
+
+/*--------------
+    Hover
+---------------*/
+
+/*--------------
+     Active
+---------------*/
+
+/*******************************
+        Video Overrides
+*******************************/
+
+/*******************************
+         Site Overrides
+*******************************/
+
+/*** uncss> filename: /Users/czapla/testing/react-test/src/css/style.css ***/
+
+/* sidebar items extra padding */
+
+/* for share, edit and remove buttons on the bookmark */
+
+div.iconbar.ui.right.floated.small.compact.basic.icon.buttons {
+  /*display: none;*/
+  visibility: hidden;
+}
+
+/* the add bookmark button */
+
+div.add.bookmark {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+
+/* the logout button on the sidebar - positioning it at the bottom */
+
+div.link.item.last {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* get rid of rounded edges and add shadow to top menu and bookmarks */
+
+div.pusher > div.ui.menu.grid.items,
+div.pusher .ui.segment {
+  box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+  border-radius: 0;
+}
+
+/* Add extra padding to the top menu */
+
+.ui.grid > .column:not(.row) {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* gets rid of the annoying vertical bar next to the right settings menu button. */
+
+.ui.menu.grid.items .item.settings:before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  width: 0px;
+  height: 100%;
+}
+
+/* SIDEBER WIDTH CUSTOMIZATION
+   original width: 260px, --> you should use SASS to set it as variable; */
+
+.ui.left.sidebar {
+  width: 220px;
+}
+
+/*** uncss> filename: http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css ***/
+
+@charset "UTF-8";
+
+/*!
+  Ionicons, v2.0.1
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+
+  Android-style icons originally built by Google’s
+  Material Design Icons: https://github.com/google/material-design-icons
+  used under CC BY http://creativecommons.org/licenses/by/4.0/
+  Modified icons to fit ionicon’s grid from original.
+*/
+
+@font-face {
+  font-family: "Ionicons";
+  src: url("../fonts/ionicons.eot?v=2.0.1");
+  src: url("../fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"),url("../fonts/ionicons.ttf?v=2.0.1") format("truetype"),url("../fonts/ionicons.woff?v=2.0.1") format("woff"),url("../fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ion-android-menu:before,
+.ion-android-options:before {
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ion-android-menu:before {
+  content: "\f394";
+}
+
+.ion-android-options:before {
+  content: "\f39d";
+}
+

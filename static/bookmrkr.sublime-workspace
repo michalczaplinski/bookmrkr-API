@@ -1,0 +1,1014 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"visi",
+				"visible	(style.css)"
+			],
+			[
+				"fade",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"vi",
+				"visibility	(index.html)"
+			],
+			[
+				"chi",
+				"child〔function〕"
+			],
+			[
+				"ha",
+				"hasClass〔function〕"
+			],
+			[
+				"rea",
+				"ready	$(document).ready"
+			],
+			[
+				"remo",
+				"removeClass〔function〕"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"b6",
+				"b64encode〔function〕"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"fir",
+				"first_timestamp"
+			],
+			[
+				"font",
+				"font_number"
+			],
+			[
+				"TWEET_",
+				"TWEET_TWITTER_ID"
+			],
+			[
+				"engra",
+				"engraving"
+			],
+			[
+				"grave",
+				"grave_material"
+			],
+			[
+				"st",
+				"stylesheet"
+			],
+			[
+				"twee",
+				"tweetArray〔argument〕"
+			],
+			[
+				"engravin",
+				"engraving_geometry"
+			],
+			[
+				"position",
+				"position_z"
+			],
+			[
+				"position_",
+				"position_x"
+			],
+			[
+				"tweet",
+				"tweetArray"
+			],
+			[
+				"FO",
+				"FOG_COLOR"
+			],
+			[
+				"POS",
+				"POSITION_X"
+			],
+			[
+				"my",
+				"myEscapedJSONString"
+			],
+			[
+				"ap",
+				"app.js"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"Comm",
+				"Comment〔variable〕"
+			],
+			[
+				"num",
+				"num_tweets"
+			],
+			[
+				"fra",
+				"fragmentshader"
+			],
+			[
+				"vertex",
+				"vertexshader"
+			],
+			[
+				"out",
+				"out_rounded"
+			],
+			[
+				"E",
+				"ExceptionHandling〔module〕"
+			],
+			[
+				"Exce",
+				"exceptions〔module〕"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"ver",
+				"vertexshader"
+			],
+			[
+				"frag",
+				"fragmentShader"
+			],
+			[
+				"ge",
+				"get	$.get()"
+			],
+			[
+				"byte",
+				"bytes〔class〕"
+			],
+			[
+				"requ",
+				"requests〔module〕"
+			],
+			[
+				"s",
+				"scoping"
+			],
+			[
+				"Htt",
+				"HttpResponseBadRequest  (class)"
+			],
+			[
+				"id",
+				"id=  (attribute)"
+			],
+			[
+				"db_",
+				"db_column"
+			],
+			[
+				"call",
+				"callback_args"
+			],
+			[
+				"H",
+				"Http404"
+			],
+			[
+				"HTTP",
+				"HttpResponseNotFound"
+			],
+			[
+				"med",
+				"medication_update_confirmation"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"django",
+				"django_msi"
+			],
+			[
+				"atta",
+				"attachment_filename"
+			],
+			[
+				"list_of",
+				"list_of_files"
+			],
+			[
+				"test",
+				"test_number"
+			],
+			[
+				"get",
+				"getCurrentUrl"
+			],
+			[
+				"screening",
+				"screening_date"
+			],
+			[
+				"patient",
+				"patient-screen-date"
+			],
+			[
+				"wa",
+				"wait"
+			],
+			[
+				"check",
+				"Check"
+			],
+			[
+				"wait",
+				"waitForUrl"
+			],
+			[
+				"dump",
+				"dump_dir"
+			],
+			[
+				"list",
+				"list_of_attachments"
+			],
+			[
+				"lis",
+				"list_of_all_pdffiles"
+			],
+			[
+				"pars",
+				"parse_args"
+			],
+			[
+				"oq",
+				"oq_number"
+			],
+			[
+				"stu",
+				"study_name"
+			],
+			[
+				"li",
+				"list_of_pngfiles"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"da",
+				"date"
+			],
+			[
+				"date",
+				"datetime"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 1949,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/app.js",
+			"settings":
+			{
+				"buffer_size": 1809,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/index.html",
+			"settings":
+			{
+				"buffer_size": 6976,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/css/style.css",
+			"settings":
+			{
+				"buffer_size": 1364,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/mit-scheme.sublime-build",
+					""
+				],
+				[
+					"Packages/User/octave.sublime-build",
+					""
+				],
+				[
+					"Packages/User/python3.sublime-build",
+					""
+				],
+				[
+					"Packages/User/scheme.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 305.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet ",
+				"Snippet: html"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"list ",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"plug",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"scheme",
+				"SublimeREPL: Scheme"
+			],
+			[
+				"sublimerepl scheme",
+				"SublimeREPL: Scheme"
+			],
+			[
+				"schem",
+				"SublimeREPL: Scheme"
+			],
+			[
+				"build",
+				"Build: Cancel"
+			],
+			[
+				"browse ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"repl sch",
+				"SublimeREPL: Scheme"
+			],
+			[
+				"repl		",
+				"SublimeREPL: Clisp"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"js",
+				"JSLint"
+			],
+			[
+				"jsli",
+				"JSLint"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 479.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/czapla/testing/react-test/dist",
+		"/Users/czapla/testing/react-test/src"
+	],
+	"file_history":
+	[
+		"/Users/czapla/testing/stealing_fonts/font_thief.py",
+		"/Users/czapla/testing/react-test/node_modules/gulp-uglify/minifier.js",
+		"/Users/czapla/testing/react-test/node_modules/gulp-uglify/node_modules/deap/lib/deap.js",
+		"/Users/czapla/testing/react-test/dist/src/build.js",
+		"/Users/czapla/testing/react-test/dist/index.html",
+		"/Users/czapla/testing/react-test/src/index.html",
+		"/Users/czapla/testing/react-test/semantic.json",
+		"/Users/czapla/testing/react-test/src/js/app.js",
+		"/Users/czapla/testing/react-test/gulpfile.js",
+		"/Users/czapla/testing/react-test/package.json",
+		"/Users/czapla/testing/react-test/src/semantic/gulpfile.js",
+		"/Users/czapla/testing/react-test/src/semantic/dist/components/menu.css",
+		"/Users/czapla/testing/react-test/src/semantic/dist/semantic.css",
+		"/Users/czapla/testing/react-test/src/semantic/dist/components/menu.min.css",
+		"/Users/czapla/testing/react-test/src/semantic/dist/semantic.min.css",
+		"/Users/czapla/testing/react-test/src/semantic/tasks/build.js",
+		"/Users/czapla/testing/react-test/src/semantic/src/semantic.less",
+		"/Users/czapla/testing/react-test/src/semantic/src/theme.config",
+		"/Users/czapla/testing/react-test/src/semantic/src/theme.less",
+		"/Users/czapla/testing/react-test/src/semantic/tasks/README.md",
+		"/Users/czapla/testing/react-test/.gitignore",
+		"/Users/czapla/testing/react-test/dist/build/build.min.js",
+		"/Users/czapla/testing/react-test/semantic/gulpfile.js",
+		"/Users/czapla/testing/react-test/semantic/src/bundle.js",
+		"/Users/czapla/testing/cryptopals/set1.py",
+		"/Users/czapla/testing/react-tutorial/public/scripts/example.js",
+		"/Users/czapla/testing/react-test/src/app.js",
+		"/Users/czapla/testing/react-test/index.html",
+		"/Users/czapla/testing/react-test/semantic/dist/semantic.js",
+		"/Users/czapla/testing/react-test/bundle.js",
+		"/Users/czapla/testing/react-tutorial/comments.json",
+		"/Users/czapla/testing/react-tutorial/public/index.html",
+		"/Users/czapla/testing/react-tryout/bower.json",
+		"/Users/czapla/testing/react-tryout/gruntfile.js",
+		"/Users/czapla/testing/react-tryout/index.html",
+		"/Users/czapla/testing/react-tryout/data.json",
+		"/Users/czapla/read/main/tests.py",
+		"/Users/czapla/Library/Application Support/Sublime Text 3/Packages/User/scheme.sublime-build",
+		"/Users/czapla/digital_graveyard/routes/api.js",
+		"/Users/czapla/digital_graveyard/app.js",
+		"/Users/czapla/digital_graveyard/data/create_tables.sql",
+		"/Users/czapla/digital_graveyard/routes/index.js",
+		"/Users/czapla/raspi.py",
+		"/Users/czapla/digital_graveyard/bin/www",
+		"/Users/czapla/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/czapla/Library/Application Support/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
+		"/Users/czapla/digital_graveyard/data/tweets.js",
+		"/Users/czapla/digital_graveyard/data/tweets.json",
+		"/Users/czapla/digital_graveyard/data/dump.py",
+		"/Users/czapla/digital_graveyard/public/javascripts/app.js",
+		"/Users/czapla/digital_graveyard/data/tweets.db",
+		"/Users/czapla/gb-sd-msi/scripts/db_setup.log",
+		"/Users/czapla/digital_graveyard/data/DAO.js",
+		"/Users/czapla/digital_graveyard/public/javascripts/load_tweets.js",
+		"/Users/czapla/digital_graveyard/scraper/digital_graveyard.py",
+		"/Users/czapla/digital_graveyard/routes/users.js",
+		"/Users/czapla/digital_graveyard/data/create_database.sql",
+		"/Users/czapla/gb-sd-msi/scripts/SQL/Database/010_gxp_brain_tbl_create_script.sql",
+		"/Users/czapla/digital_graveyard/scraper/digital_graveyard.log",
+		"/Users/czapla/digital_graveyard/public/index.html",
+		"/Users/czapla/digital_graveyard/public/javascripts/graveyard.js",
+		"/Users/czapla/digital_graveyard/scripts/digital_graveyard.py",
+		"/Users/czapla/gb-sd-msi/scripts/SQL/Database/000_create_databases.sql",
+		"/Users/czapla/gb-sd-msi/scripts/create_new_sponsor.sh",
+		"/Users/czapla/digital_graveyard/scripts/DAO.py",
+		"/Users/czapla/Library/Application Support/Postgres/var-9.4/postgresql.conf",
+		"/Users/czapla/Library/Application Support/Postgres/var-9.4/postgresql.",
+		"/Users/czapla/.bash_profile",
+		"/Users/czapla/.bashrc",
+		"/Users/czapla/gb-sd-msi/scripts/SQL/Database/020_core_tbl_create_script.sql",
+		"/Users/czapla/gb-sd-msi/scripts/setup_database.sh",
+		"/Users/czapla/digital_graveyard/data/setup_db.sh",
+		"/Users/czapla/Library/Application Support/Postgres/var-9.4/pg_hba.conf",
+		"/Users/czapla/gb-sd-msi/scripts/SQL/Database/001_msi_base_setup.sql",
+		"/Users/czapla/gb-sd-msi/scripts/SQL/Database/004_create_foreign_data_wrapper.sql",
+		"/Users/czapla/digital_graveyard/public/javascripts/FirstPersonControls.js",
+		"/Users/czapla/digital_graveyard/public/javascripts/Queue.src.js",
+		"/Users/czapla/digital_graveyard/public/javascripts/Queue.js",
+		"/Users/czapla/digital_graveyard/public/javascripts/text_test.js",
+		"/Users/czapla/digital_graveyard/package.json",
+		"/Users/czapla/digital_graveyard/public/javascripts/pace.js",
+		"/Users/czapla/digital_graveyard/public/stylesheets/style.css",
+		"/Users/czapla/digital_graveyard/views/index.html",
+		"/Users/czapla/digital_graveyard/views/layout.jade",
+		"/Users/czapla/digital_graveyard/index.html",
+		"/Users/czapla/digital_graveyard/js/graveyard.js",
+		"/Users/czapla/digital_graveyard/js/app.js",
+		"/Users/czapla/digital_graveyard/views/index.jade",
+		"/Users/czapla/digital_graveyard/js/shaders/BleachBypassShader.js",
+		"/Users/czapla/digital_graveyard/js/postprocessing/EffectComposer.js",
+		"/Users/czapla/digital_graveyard/js/shaders/CopyShader.js",
+		"/Users/czapla/digital_graveyard/js/postprocessing/RenderPass.js",
+		"/Users/czapla/digital_graveyard/js/postprocessing/ShaderPass.js",
+		"/Users/czapla/digital_graveyard/js/FirstPersonControls.js",
+		"/Users/czapla/digital_graveyard/js/text_test.js",
+		"/Users/czapla/digital_graveyard/js/jstz-1.0.4.min.js",
+		"/Users/czapla/digital_graveyard/js/load_tweets.js",
+		"/Users/czapla/digital_graveyard/README",
+		"/Users/czapla/testing/learnyounode/lesson9.js",
+		"/Users/czapla/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/czapla/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/czapla/digital_graveyard/js/my_controls.js",
+		"/Users/czapla/digital_graveyard/js/main.js",
+		"/Users/czapla/testing/node_tutorial/7.js",
+		"/Users/czapla/testing/node_tutorial/mymodule.js",
+		"/Users/czapla/testing/node_tutorial/2.js",
+		"/Users/czapla/testing/node_tutorial/3.js",
+		"/Users/czapla/testing/node_tutorial/4.js",
+		"/Users/czapla/testing/node_tutorial/5.js",
+		"/Users/czapla/testing/node_tutorial/6.js",
+		"/Users/czapla/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/czapla/testing/react-tryout/main.js",
+		"/Users/czapla/.config/liquidpromptrc",
+		"/Users/czapla/digital_graveyard/data/mydata.json",
+		"/Users/czapla/testing/shaders_sandbox/js/graphics.js",
+		"/Users/czapla/testing/shaders_sandbox/index.html",
+		"/Users/czapla/dg/wsgi/myflaskapp.py",
+		"/Users/czapla/dg/wsgi/templates/index.html",
+		"/Users/czapla/testing/test.py",
+		"/Users/czapla/testing/three.js/examples/js/ImprovedNoise.js",
+		"/Users/czapla/testing/three.js/examples/webgl_postprocessing_crossfade.html",
+		"/Users/czapla/testing/three.js/examples/webgl_postprocessing2.html",
+		"/Users/czapla/Courses_Tutorials_Examples/cs291/unit9/vertex-normal-creation/index.html",
+		"/Users/czapla/Courses_Tutorials_Examples/cs291/unit9/vertex-normal-creation/shaders.js",
+		"/Users/czapla/Courses_Tutorials_Examples/cs291/unit9/model-deformation/index.html",
+		"/Users/czapla/Courses_Tutorials_Examples/cs291/unit9/procedural-texturing/shaders.js",
+		"/Users/czapla/Courses_Tutorials_Examples/cs291/unit9/procedural-texturing/index.html",
+		"/Users/czapla/Courses_Tutorials_Examples/cs291/unit9/anisotropic-material/shaders.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"setting icon",
+			"setting",
+			"text item",
+			"/a",
+			"<a",
+			"item",
+			"right",
+			"tiny",
+			"ui tiny button",
+			"ui button",
+			"basic",
+			" ",
+			"</a",
+			"<a",
+			"/a",
+			"<a",
+			"a",
+			"margin",
+			"padding",
+			"margin",
+			"div",
+			"div class=\"row\"",
+			"row",
+			"gri",
+			"    <link rel=\"stylesheet\" type=\"text/css\" href=\"../src/semantic/dist/semantic.css\">\n",
+			"\">\n",
+			"element",
+			"tweetArray",
+			"num_tweets",
+			"  console.log(req.params);\n",
+			"fonts/newfont%s.ttf",
+			"                            ",
+			"conn",
+			"\n",
+			"CONSTRAINT",
+			"?",
+			"print_tweet",
+			"NOT NULL",
+			"NOT",
+			"'retweet'",
+			"retweet",
+			"time",
+			"Time",
+			"time",
+			"Queue",
+			"change_time_format",
+			"timezone",
+			"print",
+			"get_latest_tweets",
+			"change_time_format",
+			"timegm",
+			"logger",
+			"flowers",
+			"msi_user",
+			"this",
+			"material",
+			"Grave",
+			"this.context",
+			"Grave",
+			"grave",
+			"context",
+			"tombstone",
+			"mesh1",
+			"material1",
+			"texture1",
+			"graveArray[i]",
+			"worldWidth",
+			"worldHalfWidth",
+			"plane",
+			"user",
+			"ul",
+			"javascript",
+			"js/",
+			"'js/",
+			"js",
+			">\n",
+			"type=\"text/javascript\"",
+			"        <script type=\"text/javascript\"></script>\n",
+			"context1",
+			"canvas1",
+			"date",
+			"10",
+			"geometry",
+			"scene",
+			"graveArray",
+			"adjust_to_users_timezone",
+			"geometry",
+			"file",
+			"data",
+			"var",
+			"file_length",
+			"getInitialState",
+			"componentDidMount",
+			"onCommentSubmit",
+			"   \n",
+			"{\n",
+			"onSubmit",
+			"T ",
+			"static",
+			"container",
+			"createShaderMaterial",
+			"taylorInvSqrt",
+			"result",
+			"vNormal",
+			"domElement",
+			"vView",
+			"vNormal",
+			"get_definition",
+			"word_quoted",
+			"word",
+			"get_autocomplete",
+			"    import sys\n",
+			"\n#",
+			"function",
+			"term",
+			"n",
+			"s",
+			"milliseconds",
+			"millisecond",
+			"runtime",
+			" \"$",
+			"repl",
+			"(define (sqrt x)\n  (sqrt-iter 1.0 x))\n\n(define (sqrt-iter guess x)\n  (if (good-enough? guess x)\n      guess\n      (sqrt-iter (improve guess x) x)))\n\n(define (good-enough? guess x)\n  (< (abs (- (square guess) x)) 0.001))\n\n(define (improve guess x)\n  (average guess (/ x guess)))",
+			"class Form",
+			"cursor",
+			"self.connection",
+			"authentication_form",
+			"from django.db import connection\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" identifier ",
+			"identifier ",
+			"identifier"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								908,
+								908
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"glsv_configured": true,
+							"glsv_enabled": 1,
+							"glsv_spec": 0,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 570.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1809,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								293,
+								293
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"glsv_configured": true,
+							"glsv_enabled": 1,
+							"glsv_spec": 0,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6976,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								713,
+								713
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"glsv_configured": true,
+							"glsv_enabled": 1,
+							"glsv_spec": 0,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								885,
+								885
+							]
+						],
+						"settings":
+						{
+							"glsv_configured": true,
+							"glsv_enabled": 1,
+							"glsv_spec": 0,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 325.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bookmrkr.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"se",
+				"trackusername/settings.py"
+			],
+			[
+				"",
+				"~/djangalango/trackusername/settings.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 171.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
