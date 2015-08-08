@@ -10,7 +10,7 @@ class TagSerializer(serializers.ModelSerializer):
 class BookmarkSerializer(serializers.ModelSerializer):
 
     owner = serializers.ReadOnlyField(source='owner.username')
-
+    cover = serializers.ImageField(use_url=True)
     tags = TagSerializer(required=False, many=True)
 
     class Meta:

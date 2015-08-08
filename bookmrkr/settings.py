@@ -58,7 +58,7 @@ ROOT_URLCONF = 'bookmrkr.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/czapla/Bookmrkr/bookmrkr-frontend/dist/html'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -95,7 +95,6 @@ REST_FRAMEWORK = {
     ),
 
     'PAGE_SIZE': 10,
-
 }
 
 # Internationalization
@@ -116,3 +115,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/Users/czapla/Bookmrkr/bookmrkr-static'
+STATICFILES_DIRS = ('/Users/czapla/Bookmrkr/bookmrkr-frontend/',)
+
+LOGIN_REDIRECT_URL = '/bookmarks/'
