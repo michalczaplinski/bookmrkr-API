@@ -1,5 +1,7 @@
 from django.conf.urls import include, url
 from rest_framework.routers import DefaultRouter
+from django.views.decorators.csrf import csrf_exempt
+
 
 from api.views import BookmarkViewSet
 
@@ -9,5 +11,5 @@ router.register(r'bookmarks', BookmarkViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
-    url(r'^auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^auth/', csrf_exempt(include('rest_auth.urls')))
 ]

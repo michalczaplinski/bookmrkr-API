@@ -38,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
     'api',
     'main',
 )
@@ -119,3 +121,4 @@ STATIC_ROOT = '/Users/czapla/Bookmrkr/bookmrkr-static'
 STATICFILES_DIRS = ('/Users/czapla/Bookmrkr/bookmrkr-frontend/',)
 
 LOGIN_REDIRECT_URL = '/bookmarks/'
+CSRF_COOKIE_NAME = 'bookmrkr_token'

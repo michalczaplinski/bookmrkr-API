@@ -1,4 +1,6 @@
 from django.contrib.auth.models import User
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 
 from rest_framework import viewsets
 from rest_framework.authentication import SessionAuthentication
@@ -7,7 +9,6 @@ from rest_framework.response import Response
 
 from main.models import Bookmark, Tag
 from api.serializers import BookmarkSerializer
-
 
 class BookmarkViewSet(viewsets.ModelViewSet):
     authentication_classes = (SessionAuthentication,)
@@ -24,3 +25,6 @@ class BookmarkViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
 
+    @method_decorator(csrf_exempt)
+    def dispatch(self, *args, **kwargs):
+        return super(BookmarkViewSet, self).dispatch(*args, **kwargs)
