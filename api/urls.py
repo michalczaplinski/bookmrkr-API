@@ -11,5 +11,5 @@ router.register(r'bookmarks', BookmarkViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
-    url(r'^auth/', csrf_exempt(include('rest_auth.urls')))
+    url(r'^auth/', include('rest_auth.urls'))
 ]
