@@ -9,5 +9,7 @@ def bookmarks(request):
 
 @ensure_csrf_cookie
 def index(request):
-    return render_to_response("index.html", RequestContext(request, {}))
-
+    if request.user.is_authenticated():
+        return render(request, 'bookmarks.html')
+    else:
+        return render_to_response("index.html", RequestContext(request, {}))
