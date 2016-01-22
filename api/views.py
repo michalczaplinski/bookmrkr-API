@@ -32,10 +32,12 @@ class BookmarkViewSet(viewsets.ModelViewSet):
     # TODO add an update() method here.
     # http://www.django-rest-framework.org/api-guide/serializers/#writing-update-methods-for-nested-representations
 
+
     # don't think that explict csrf exemption is necessary here.
     # @method_decorator(csrf_exempt)
     # def dispatch(self, *args, **kwargs):
     #     return super(BookmarkViewSet, self).dispatch(*args, **kwargs)
+
 
 class TagViewSet(viewsets.ModelViewSet):
     authentication_classes = (SessionAuthentication,)

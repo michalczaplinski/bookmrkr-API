@@ -40,3 +40,7 @@ class BookmarkSerializer(serializers.ModelSerializer):
             t = Tag.objects.create(**tag)
             bookmark.tags.add(t)
         return bookmark
+
+    # TODO:
+    # update
+    # delete
