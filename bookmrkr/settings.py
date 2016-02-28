@@ -119,8 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/Users/czapla/Bookmrkr/bookmrkr-static'
+STATIC_ROOT = '/Users/czapla/Bookmrkr/media/static'
 STATICFILES_DIRS = ('/Users/czapla/Bookmrkr/bookmrkr-frontend/',)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/Users/czapla/Bookmrkr/media/uploads'
 
 LOGIN_REDIRECT_URL = '/bookmarks/'
 CSRF_COOKIE_NAME = 'csrftoken'

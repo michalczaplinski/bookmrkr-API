@@ -1,14 +1,14 @@
-from django.contrib.auth.models import User
-from django.utils.decorators import method_decorator
-from django.views.decorators.csrf import csrf_exempt
-
 from rest_framework import viewsets
 from rest_framework.authentication import SessionAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
+from django.views.decorators.csrf import ensure_csrf_cookie
+from django.http import HttpResponse
+
 from main.models import Bookmark, Tag
 from api.serializers import BookmarkSerializer, TagSerializer
+
 
 class BookmarkViewSet(viewsets.ModelViewSet):
     authentication_classes = (SessionAuthentication,)
@@ -17,11 +17,10 @@ class BookmarkViewSet(viewsets.ModelViewSet):
     queryset = Bookmark.objects.all()
     serializer_class = BookmarkSerializer
 
-    def list(self, request):
+    def list(self, request, *args, **kwargs):
         queryset = Bookmark.objects.filter(owner=request.user)
         serializer = BookmarkSerializer(queryset, many=True)
         return Response(serializer.data)
-
 
     def perform_create(self, serializer):
         ''' This overrides the method in mixins.CreateModelMixin
@@ -29,14 +28,15 @@ class BookmarkViewSet(viewsets.ModelViewSet):
         '''
         serializer.save(owner=self.request.user)
 
+    def perform_update(self, serializer):
+        serializer.save(owner=self.request.user)
+
+    #
+    # def destroy(self, request, *args, **kwargs):
+    #     super(BookmarkViewSet, self).destroy(request, *args, **kwargs)
+
     # TODO add an update() method here.
     # http://www.django-rest-framework.org/api-guide/serializers/#writing-update-methods-for-nested-representations
-
-
-    # don't think that explict csrf exemption is necessary here.
-    # @method_decorator(csrf_exempt)
-    # def dispatch(self, *args, **kwargs):
-    #     return super(BookmarkViewSet, self).dispatch(*args, **kwargs)
 
 
 class TagViewSet(viewsets.ModelViewSet):
@@ -46,9 +46,12 @@ class TagViewSet(viewsets.ModelViewSet):
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
 
-    def list(self, request):
+    def list(self, request, *args, **kwargs):
         queryset = Tag.objects.filter(owner=request.user)
-        serializer = TagSerializer
+        serializer = TagSerializer(queryset, many=True)
         return Response(serializer.data)
 
 
+@ensure_csrf_cookie
+def get_token(request):
+    return HttpResponse("here's your CSRF token")

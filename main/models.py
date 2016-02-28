@@ -4,7 +4,7 @@ from colorful.fields import RGBColorField
 
 
 class Tag(models.Model):
-    name = models.CharField(max_length=25, unique=True)
+    name = models.CharField(max_length=25)
     color = RGBColorField(null=True,
                           colors=['#FFFFFF',
                                   '#E91E63',
@@ -26,10 +26,12 @@ class Tag(models.Model):
                                   '#9E9E9E',  # grey
                                   '#607D8B',  # blue gray
                                   '#000000',  # black
-                                  '#FFFFFF',   # white
+                                  '#FFFFFF',  # white
                                   ])
+    owner = models.ForeignKey(User, related_name='tags')
 
     class Meta:
+        unique_together = ("name", "owner")
         verbose_name = 'tag'
         verbose_name_plural = 'tags'
         ordering = ['name']
@@ -70,6 +72,7 @@ class Bookmark(models.Model):
     domain = models.CharField('domain', max_length=40, blank=True)
 
     class Meta:
+        unique_together = ("url", "owner")
         verbose_name = 'bookmark'
         verbose_name_plural = 'bookmarks'
         ordering = ['-date_created']
