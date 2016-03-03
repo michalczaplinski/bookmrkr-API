@@ -62,12 +62,8 @@ class BookmarkSerializer(serializers.ModelSerializer):
         for tag in tags:
             # Returns a tuple of (object, created), where object is the retrieved or created object
             # and created is a boolean specifying whether a new object was created.
-            new_tag, created = Tag.objects.get_or_create(name=tag.get('name'), owner=validated_data['owner'])
-            if created:
-                instance.tags.add(new_tag)
-            else:
-                # perhaps this is not needed
-                instance.tags.update(new_tag)
+            new_tag, _ = Tag.objects.get_or_create(name=tag.get('name'), owner=validated_data['owner'])
+            instance.tags.add(new_tag)
 
         instance.cover = validated_data.get('cover', instance.cover)
         instance.save()

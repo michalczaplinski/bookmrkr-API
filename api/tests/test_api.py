@@ -3,11 +3,23 @@ import os
 from django.contrib.auth.models import User
 from rest_framework import status
 from rest_framework.test import APITestCase
+from rest_framework.renderers import JSONRenderer
+
+from api.serializers import BookmarkSerializer
 from .factories import TagFactory, BookmarkFactory
 from django.conf import settings
 from main.models import Bookmark, Tag
 
 user = User.objects.get(username='test')
+
+
+def _clean_up_uploads(self):
+    # check if the instance of our Test Case has the attribute 'response'
+    if hasattr(self, 'response') and 'cover' in self.response:
+        # if it does, get the path to the uploaded file and if it exist, remove the file.
+        uploaded_file_path = os.path.join(settings.MEDIA_ROOT, self.response.data['cover'].split('/')[-1])
+        if os.path.isfile(uploaded_file_path):
+            os.remove(uploaded_file_path)
 
 
 class TestGets(APITestCase):
@@ -51,13 +63,7 @@ class TestCreate(APITestCase):
         }
 
     def tearDown(self):
-
-        # check if the instance of our Test Case has the attribute 'response'
-        if hasattr(self, 'response') and 'cover' in self.response:
-            # if it does, get the path to the uploaded file and if it exist, remove the file.
-            uploaded_file_path = os.path.join(settings.MEDIA_ROOT, self.response.data['cover'].split('/')[-1])
-            if os.path.isfile(uploaded_file_path):
-                os.remove(uploaded_file_path)
+        _clean_up_uploads(self)
 
     def test_create_a_bookmark_with_cover_photo(self):
         image_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_image.jpg')
@@ -107,9 +113,37 @@ class TestUpdate(APITestCase):
     def setUp(self):
         self.client.force_authenticate(user=user)
         self.bookmark = BookmarkFactory.build()
+        self.upload_data = {
+            "url": "http://test.bookmark1.com",
+            "title": "test bookmark 1",
+            "description": "test bookmark 1 description",
+            "cover": None,
+            "content": "",
+            "date_created": "2016-02-20T17:55:20.126462Z",
+            "date_updated": "2016-02-20T17:55:20.126487Z",
+            "owner": "test",
+            "tags": [],
+            "is_trashed": "false",
+            "domain": "bookmark1.com"
+        }
+
+    def tearDown(self):
+        _clean_up_uploads(self)
 
     def test_updating_bookmark_title(self):
-        pass
+        bookmark = BookmarkFactory.create()
+        serialized_bookmark = BookmarkSerializer(bookmark)
+
+        self.upload_data = serialized_bookmark.data
+        self.upload_data['title'] = 'NEW TEST TITLE'
+
+        self.response = self.client.patch('/api/bookmarks/' + str(bookmark.id),
+                                          self.upload_data,
+                                          format='json')
+
+        # self.assertEquals(self.response.status_code, status.HTTP_200_OK)
+        self.assertTrue(Bookmark.objects.filter(title='NEW TEST TITLE').exists())
+        # self.assertTrue(Bookmark.objects.filter(tags__name='Very Fun').exists())
 
     def test_updating_bookmark_title_and_url(self):
         pass

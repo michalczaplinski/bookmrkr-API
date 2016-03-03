@@ -20,7 +20,7 @@ class BookmarkFactory(DjangoModelFactory):
 
     url = 'http://example.com'
     title = 'Fun website'
-    cover = ImageField()
+    cover = None
     description = 'Lorem ipsum'
     content = 'lorem ipsum'
     date_created = datetime.datetime.now()
