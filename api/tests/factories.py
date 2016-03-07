@@ -9,7 +9,7 @@ class TagFactory(DjangoModelFactory):
     class Meta:
         model = Tag
 
-    name = 'Very Fun'
+    name = factory.Faker('name')
     color = '#00BCD4'
     owner = User.objects.get(username='test')
 
@@ -18,8 +18,8 @@ class BookmarkFactory(DjangoModelFactory):
     class Meta:
         model = Bookmark
 
-    url = 'http://example.com'
-    title = 'Fun website'
+    url = factory.Faker('url')
+    title = 'Bookmark1'
     cover = None
     description = 'Lorem ipsum'
     content = 'lorem ipsum'
@@ -27,6 +27,7 @@ class BookmarkFactory(DjangoModelFactory):
     date_updated = datetime.datetime.now()
     owner = User.objects.get(username='test')
     type = 'Link'
+    tags = [{'name': 'tag1'}]
     is_trashed = False
     domain = 'example.com'
 

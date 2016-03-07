@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from rest_framework import serializers
 from main.models import Bookmark, Tag
 import datetime
@@ -47,6 +48,7 @@ class BookmarkSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
 
         tags = validated_data.pop('tags')
+        new_tags = []
 
         instance.url = validated_data.get('url', instance.url)
         instance.title = validated_data.get('title', instance.title)
@@ -63,7 +65,15 @@ class BookmarkSerializer(serializers.ModelSerializer):
             # Returns a tuple of (object, created), where object is the retrieved or created object
             # and created is a boolean specifying whether a new object was created.
             new_tag, _ = Tag.objects.get_or_create(name=tag.get('name'), owner=validated_data['owner'])
-            instance.tags.add(new_tag)
+            new_tags.append(new_tag)
+
+        # if there are no Bookmarks left with the particular tag, delete it.
+        # for tag in instance.tags.iterator():
+        #     if not Bookmark.objects.filter(tags__name=tag.name).exists():
+        #         tag.delete()
+
+        # replace all instances of old tags with the new ones.
+        instance.tags.set(new_tags)
 
         instance.cover = validated_data.get('cover', instance.cover)
         instance.save()

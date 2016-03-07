@@ -51,6 +51,15 @@ class TagViewSet(viewsets.ModelViewSet):
         serializer = TagSerializer(queryset, many=True)
         return Response(serializer.data)
 
+    def perform_create(self, serializer):
+        ''' This overrides the method in mixins.CreateModelMixin
+            which is mixed into ModelViewSet
+        '''
+        serializer.save(owner=self.request.user)
+
+    def perform_update(self, serializer):
+        serializer.save(owner=self.request.user)
+
 
 @ensure_csrf_cookie
 def get_token(request):
