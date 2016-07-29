@@ -9,6 +9,11 @@ from django.http import HttpResponse
 from main.models import Bookmark, Tag
 from api.serializers import BookmarkSerializer, TagSerializer
 
+# search stuff
+from drf_haystack.viewsets import HaystackViewSet
+from main.search_indexes import BookmarkIndex
+from .serializers import BookmarkSearchSerializer
+
 
 class BookmarkViewSet(viewsets.ModelViewSet):
     authentication_classes = (SessionAuthentication,)
@@ -59,6 +64,17 @@ class TagViewSet(viewsets.ModelViewSet):
 
     def perform_update(self, serializer):
         serializer.save(owner=self.request.user)
+
+
+class BookmarkSearchView(HaystackViewSet):
+
+    # `index_models` is an optional list of which models you would like to include
+    # in the search result. You might have several models indexed, and this provides
+    # a way to filter out those of no interest for this particular view.
+    # (Translates to `SearchQuerySet().models(*index_models)` behind the scenes.
+    index_models = [Bookmark]
+
+    serializer_class = BookmarkSearchSerializer
 
 
 @ensure_csrf_cookie

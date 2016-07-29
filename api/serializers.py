@@ -3,6 +3,9 @@ from rest_framework import serializers
 from main.models import Bookmark, Tag
 import datetime
 
+#search stuff
+from drf_haystack.serializers import HaystackSerializer
+from main.search_indexes import BookmarkIndex
 
 class TagSerializer(serializers.ModelSerializer):
     owner = serializers.PrimaryKeyRelatedField(read_only=True, source='owner.username', default=serializers.CurrentUserDefault())
@@ -78,3 +81,19 @@ class BookmarkSerializer(serializers.ModelSerializer):
         instance.cover = validated_data.get('cover', instance.cover)
         instance.save()
         return instance
+
+
+class BookmarkSearchSerializer(HaystackSerializer):
+
+    class Meta:
+        # The `index_classes` attribute is a list of which search indexes
+        # we want to include in the search.
+        index_classes = [BookmarkIndex]
+
+        # The `fields` contains all the fields we want to include.
+        # NOTE: Make sure you don't confuse these with model attributes. These
+        # fields belong to the search index!
+        fields = [
+            "text", "title", "description", "content", "autocomplete"
+        ]
+

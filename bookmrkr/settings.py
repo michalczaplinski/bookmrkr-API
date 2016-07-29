@@ -37,6 +37,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+
+    'haystack',
+    'drf_haystack',
+    'corsheaders',
     'django_extensions',
     'rest_framework',
     'rest_framework.authtoken',
@@ -48,6 +53,7 @@ INSTALLED_APPS = (
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -62,7 +68,7 @@ ROOT_URLCONF = 'bookmrkr.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/czapla/Bookmrkr/bookmrkr-frontend/dist/html'],
+        'DIRS': ['/Users/czapla/Bookmrkr/bookmrkr/'],  # TODO: change this!§§
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,3 +134,18 @@ MEDIA_ROOT = '/Users/czapla/Bookmrkr/media/uploads'
 
 LOGIN_REDIRECT_URL = '/bookmarks/'
 CSRF_COOKIE_NAME = 'csrftoken'
+
+# CORS stuff
+CORS_ORIGIN_WHITELIST = ('localhost:3000', 'bookmrkr.dev')
+CORS_ALLOW_CREDENTIALS = True
+CORS_URLS_REGEX = '^.*$'
+
+
+# elasticsearch and haystack stuff
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',
+        'INDEX_NAME': 'haystack',
+    },
+}

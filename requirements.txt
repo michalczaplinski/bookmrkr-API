@@ -1,11 +1,16 @@
 Django==1.9.6
 django-colorful==1.2
+django-cors-headers==1.1.0
 django-extensions==1.6.6
+django-haystack==2.5.0
 django-rest-auth==0.7.0
 djangorestframework==3.3.3
+drf-haystack==1.5.6
+elasticsearch==2.3.0
 factory-boy==2.7.0
 fake-factory==0.5.7
 Pillow==3.2.0
 psycopg2==2.6.1
 python-dateutil==2.5.3
 six==1.10.0
+urllib3==1.16
