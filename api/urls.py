@@ -8,7 +8,7 @@ from api.views import BookmarkViewSet, TagViewSet, BookmarkSearchView, get_token
 router = DefaultRouter()
 router.register('bookmarks', BookmarkViewSet)
 router.register('tags', TagViewSet)
-router.register("search", BookmarkSearchView, base_name="bookmark-search")
+router.register("search", BookmarkSearchView, base_name="bookmark-list")
 
 urlpatterns = [
     url(r'^', include(router.urls)),

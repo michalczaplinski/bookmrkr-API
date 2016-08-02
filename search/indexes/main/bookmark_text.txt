@@ -1,3 +1,1 @@
-{{ object.title }}
-{{ object.description }}
-{{ object.content }}
+{{ object.title }} {{ object.description }} {{ object.content }}

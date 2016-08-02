@@ -5,18 +5,10 @@ from .models import Bookmark
 
 class BookmarkIndex(indexes.SearchIndex, indexes.Indexable):
 
-    text = indexes.CharField(document=True, use_template=True)
+    text = indexes.EdgeNgramField(document=True, use_template=True)
     title = indexes.CharField(model_attr='title')
     description = indexes.CharField(model_attr='description')
     content = indexes.CharField(model_attr='content')
-
-    autocomplete = indexes.EdgeNgramField()
-
-    @staticmethod
-    def prepare_autocomplete(obj):
-        return " ".join((
-            obj.title, obj.description, obj.content
-        ))
 
     def get_model(self):
         return Bookmark

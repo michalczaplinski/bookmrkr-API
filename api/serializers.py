@@ -94,6 +94,6 @@ class BookmarkSearchSerializer(HaystackSerializer):
         # NOTE: Make sure you don't confuse these with model attributes. These
         # fields belong to the search index!
         fields = [
-            "text", "title", "description", "content", "autocomplete"
+            "text", "title", "description", "content"
         ]
 
