@@ -5,10 +5,13 @@ from .models import Bookmark
 
 class BookmarkIndex(indexes.SearchIndex, indexes.Indexable):
 
+    id = indexes.IntegerField(model_attr='id')
+
     text = indexes.EdgeNgramField(document=True, use_template=True)
     title = indexes.CharField(model_attr='title')
     description = indexes.CharField(model_attr='description')
     content = indexes.CharField(model_attr='content')
+
 
     def get_model(self):
         return Bookmark
