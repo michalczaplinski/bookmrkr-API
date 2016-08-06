@@ -19,6 +19,7 @@ class BookmarkViewSet(viewsets.ModelViewSet):
     authentication_classes = (SessionAuthentication,)
     permission_classes = (IsAuthenticated,)
 
+    # TODO: check if this should not also be filtered by owner already
     queryset = Bookmark.objects.all()
     serializer_class = BookmarkSerializer
 
@@ -48,6 +49,7 @@ class TagViewSet(viewsets.ModelViewSet):
     authentication_classes = (SessionAuthentication,)
     permission_classes = (IsAuthenticated,)
 
+    # TODO: check if this should not also be filtered by owner already
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
 
@@ -73,8 +75,16 @@ class BookmarkSearchView(HaystackViewSet):
     # a way to filter out those of no interest for this particular view.
     # (Translates to `SearchQuerySet().models(*index_models)` behind the scenes.
     index_models = [Bookmark]
-
     serializer_class = BookmarkSearchSerializer
+
+    authentication_classes = (SessionAuthentication,)
+    permission_classes = (IsAuthenticated,)
+
+    # get the default queryset from haystack-drf and then filter it by user.
+    def get_queryset(self, *args, **kwargs):
+        queryset = super().get_queryset(*args, **kwargs)
+        return queryset.filter(owner=self.request.user)
+
 
 
 @ensure_csrf_cookie

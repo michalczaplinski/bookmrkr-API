@@ -11,6 +11,7 @@ class BookmarkIndex(indexes.SearchIndex, indexes.Indexable):
     title = indexes.CharField(model_attr='title')
     description = indexes.CharField(model_attr='description')
     content = indexes.CharField(model_attr='content')
+    owner = indexes.CharField(model_attr='owner')
 
 
     def get_model(self):

@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
     'haystack',
     'drf_haystack',
     'corsheaders',
@@ -47,6 +46,7 @@ INSTALLED_APPS = (
     'rest_framework.authtoken',
     'rest_auth',
     'colorful',
+
     'api',
     'main',
 )
@@ -102,7 +102,7 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
     ),
-    'PAGE_SIZE': 10,
+    'PAGE_SIZE': 20,
     'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
 
@@ -112,13 +112,9 @@ REST_FRAMEWORK = {
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'Europe/Berlin'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 
