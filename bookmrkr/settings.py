@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'rest_framework.authtoken',
     'rest_auth',
     'colorful',
+    "autofixture",
 
     'api',
     'main',
@@ -90,8 +91,8 @@ WSGI_APPLICATION = 'bookmrkr.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bookmarkr',
-        'USER': 'bookmark_user',
+        'NAME': 'bookmrkr',
+        'USER': 'bookmrkr_user',
         'PASSWORD': 'password',
         'HOST': '127.0.0.1',
         'PORT': '5432',
